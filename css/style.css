@@ -1,0 +1,27 @@
+﻿body													{}
+
+/*Wrapper*/
+
+div.wrapper 											{margin: 0 auto; height:452px; width:640px; background-color: #d3ebb3; position:relative;}
+
+/* Top */
+
+div.top													{}
+
+.cabecalho 												{height:111px; background: url(../img/cabecalho.jpg) repeat-x;}
+
+
+/*Middle*/
+
+div.middle												{}
+
+.menuUnidade 											{height:128px; width:640px; background: url(../img/fundoMenu.jpg) repeat-x; position:absolute; top:217px;}
+
+.setaAmarela 											{height:128px; width:92px; background: url(../img/setaAmarela.png) no-repeat;}
+
+.unidadeRow li											{display:inline; margin:70px;}
+
+.unidadeRow li a 	 									{font-size:14px; font-family:calibri; font-weight:bold; color: rgb(51,153,0); text-decoration:none}			
+/*Bottom*/
+
+div.bottom												{height: 50px;}
