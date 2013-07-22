@@ -1,27 +1,60 @@
 ﻿body													{}
 
-/*Wrapper*/
+/*--------------------------------------Wrapper--------------------------------------*/
 
 div.wrapper 											{margin: 0 auto; height:452px; width:640px; background-color: #d3ebb3; position:relative;}
 
-/* Top */
+.campoVideo 											{background:pink; position:absolute; top:16px; left:286px; height:190px; width:340px; z-index:9999; border: solid rgb(255,255,255)}
+
+/*----------------------------------------Top----------------------------------------*/
 
 div.top													{}
 
 .cabecalho 												{height:111px; background: url(../img/cabecalho.jpg) repeat-x;}
+													
+.tituloTop  											{color: rgb(255,255,255); font: italic 33px Myriad Pro, Serif; line-height:100%; margin:2% 2% 0% 3%; padding-top:10px ;text-decoration:none}
+	
+.subTituloTop 											{color: rgb(188,249,208); font: italic 22px Myriad Pro, Serif; margin:0px 3%;}  
+	
+/*--------------------------------------Middle--------------------------------------*/
 
+div.middle												{height:236px; position:relative;}
 
-/*Middle*/
+.descricaoModulo 										{height:100px; width:260px; margin:2%;}
 
-div.middle												{}
+	.descricaoModulo p										{font-size:14px; font-family:calibri; color: rgb(113,119,104); text-decoration:none;}
 
-.menuUnidade 											{height:128px; width:640px; background: url(../img/fundoMenu.jpg) repeat-x; position:absolute; top:217px;}
+.menuUnidade 											{height:128px; width:640px; background: url(../img/fundoMenu.jpg) repeat-x; position:absolute; top:108px;}
 
-.setaAmarela 											{height:128px; width:92px; background: url(../img/setaAmarela.png) no-repeat;}
+.setaAmarela 											{height:128px; width:92px; background: url(../img/setaAmarela.png) no-repeat; }
 
-.unidadeRow li											{display:inline; margin:70px;}
+	.setaAmarela p 											{color: rgb(255,255,255); font: 16px Myriad Pro, Serif; margin:0px; padding:33px 8px 0px 0px; text-align:center;}
 
-.unidadeRow li a 	 									{font-size:14px; font-family:calibri; font-weight:bold; color: rgb(51,153,0); text-decoration:none}			
-/*Bottom*/
+.unidadeRow 											{position:absolute; margin-left:80px; top:1px; padding:0px;}
 
-div.bottom												{height: 50px;}
+	.unidadeRow li 											{display:inline-block; margin-left:60px; width:120px;}
+
+		.unidadeRow li a 										{font-size:14px; font-family:calibri; font-weight:bold; color: rgb(51,153,0); text-decoration:none}
+
+			.unidadeRow p 											{font-size:14px; font-family:calibri; margin:0px; text-align:justify; color: rgb(91,91,91);}
+
+.unidadeIconRow											{position:absolute; margin-top:20px; top:0px; left:40px; padding:0px;}
+
+.unidadeIcon 											{display:inline-block; height:29px; width:22px; background:url(../img/unidadeIcon.png); no-repeat; margin:0px 88px 0px 70px;}	
+
+/*--------------------------------------Bottom--------------------------------------*/
+
+div.bottom												{height: 105px;}
+
+	/*---------Bottom Left----------*/
+.bottomLeft 											{float: left; height:105px; width:50%;}
+
+.iconBottom 											{padding:0px;}
+
+	.iconBottom li											{display:inline; margin-left:40px;}
+
+		.iconBottom li a 	 									{font: 14px calibri, Serif; color: rgb(113,119,104); text-decoration:none}
+
+	/*---------Bottom Right----------*/
+
+.bottomRight 											{float: right; height:105px; width:50%;}
