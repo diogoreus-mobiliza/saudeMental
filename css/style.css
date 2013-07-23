@@ -4,7 +4,7 @@
 
 div.wrapper 											{margin: 0 auto; height:452px; width:640px; background-color: #d3ebb3; position:relative;}
 
-.campoVideo 											{background:pink; position:absolute; top:16px; left:286px; height:190px; width:340px; z-index:9999; border: solid rgb(255,255,255)}
+.campoVideo 											{position:absolute; top:16px; left:286px; height:190px; width:340px; z-index:9999; border: solid rgb(255,255,255)}
 
 /*----------------------------------------Top----------------------------------------*/
 
@@ -12,9 +12,9 @@ div.top													{}
 
 .cabecalho 												{height:111px; background: url(../img/cabecalho.jpg) repeat-x;}
 													
-.tituloTop  											{color: rgb(255,255,255); font: italic 33px Myriad Pro, Serif; line-height:100%; margin:2% 2% 0% 3%; padding-top:10px ;text-decoration:none}
+.tituloTop  											{color: rgb(255,255,255); font: bold 33px Calibri, Serif; line-height:100%; margin:2% 2% 0% 3%; padding-top:10px ;text-decoration:none;}
 	
-.subTituloTop 											{color: rgb(188,249,208); font: italic 22px Myriad Pro, Serif; margin:0px 3%;}  
+.subTituloTop 											{color: rgb(188,249,208); font: bold 22px Calibri, Serif; margin:0px 3%;}  
 	
 /*--------------------------------------Middle--------------------------------------*/
 
@@ -28,17 +28,17 @@ div.middle												{height:236px; position:relative;}
 
 .setaAmarela 											{height:128px; width:92px; background: url(../img/setaAmarela.png) no-repeat; }
 
-	.setaAmarela p 											{color: rgb(255,255,255); font: 16px Myriad Pro, Serif; margin:0px; padding:33px 8px 0px 0px; text-align:center;}
+	.setaAmarela p 											{color: rgb(255,255,255); font: bold 16px calibri, Serif; margin:0px; padding:34px 8px 0px 0px; text-align:center; line-height:18px;}
 
-.unidadeRow 											{position:absolute; margin-left:80px; top:1px; padding:0px;}
+.unidadeRow 											{position:absolute; margin:0px; top:16px; left:80px; padding:0px;}
 
 	.unidadeRow li 											{display:inline-block; margin-left:60px; width:120px;}
 
-		.unidadeRow li a 										{font-size:14px; font-family:calibri; font-weight:bold; color: rgb(51,153,0); text-decoration:none}
+		.unidadeRow li a 										{font-size:13px; font-family:calibri; font-weight:bold; color: rgb(51,153,0); text-decoration:none; z-index:9999;}
 
-			.unidadeRow p 											{font-size:14px; font-family:calibri; margin:0px; text-align:justify; color: rgb(91,91,91);}
+			.unidadeRow p 											{font-size:13px; font-family:calibri; margin:0px; text-align:justify; color: rgb(91,91,91);}
 
-.unidadeIconRow											{position:absolute; margin-top:20px; top:0px; left:40px; padding:0px;}
+.unidadeIconRow											{position:absolute; margin:0px; top:22px; left:40px; padding:0px;}
 
 .unidadeIcon 											{display:inline-block; height:29px; width:22px; background:url(../img/unidadeIcon.png); no-repeat; margin:0px 88px 0px 70px;}	
 

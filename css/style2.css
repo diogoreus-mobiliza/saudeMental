@@ -1,0 +1,81 @@
+﻿body													{}
+
+@font-face {
+	font-family: "MyriadPro-BoldCond";
+	src: url("http://site/fontes/RegencyScriptFLF-Regular.eot"); /* para IE */
+	src: local("MyriadPro-BoldCond"), url("http://site/fontes/RegencyScriptFLF-Regular.ttf");
+	}
+
+
+
+/*--------------------------------------Wrapper--------------------------------------*/
+
+div.wrapper 											{margin: 0 auto; height:452px; width:640px; background-color: #d3ebb3; position:relative;}
+
+.campoVideo 											{position:absolute; top:16px; left:286px; height:190px; width:340px; z-index:9999; border: solid rgb(255,255,255)}
+
+
+/*----------------------------------------Top----------------------------------------*/
+
+div.top													{}
+
+.cabecalho 												{height:111px; background: url(../img/cabecalho.jpg) repeat-x;}
+													
+.tituloTop  											{color: rgb(255,255,255); font: 35px MyriadPro-BoldCond, Serif; line-height:100%; margin:2% 2% 0% 3%; padding:10px 0px 0px 7px;}
+	
+.subTituloTop 											{color: rgb(188,249,208); font: 22px MyriadPro-BoldCond, Serif; margin:0px 4%;}  
+	
+
+/*--------------------------------------Middle--------------------------------------*/
+
+div.middle												{height:236px; position:relative;}
+
+.descricaoModulo 										{height:100px; width:260px; margin:2%;}
+
+	.descricaoModulo p										{font-size:14px; font-family:calibri; color: rgb(113,119,104); text-decoration:none;}
+
+.menuUnidade 											{height:128px; width:640px; background: url(../img/fundoMenu.jpg) repeat-x; position:absolute; top:96px;}
+
+.setaAmarela 											{height:128px; width:92px; background: url(../img/setaAmarela.png) no-repeat; }
+
+	.setaAmarela p 											{color: rgb(255,255,255); font: italic 18px MyriadPro-BoldCond, Serif; margin:0px; padding:34px 8px 0px 0px; text-align:center; line-height:18px;}
+
+.descricaoContainer 									{position:absolute; top:1px; left:92px; height:126px; width:548px;}
+
+.descricao 												{display:inline-block; height:126px; width:180px; position:relative;} 
+
+	.descricao a 											{display:block; height:100px; width:128px; font: 14px calibri, Serif; color: rgb(91,91,91); text-align: justify; margin:20px 0px 0px 40px; text-decoration:none}			
+
+		.descricao a h3 										{color: rgb(51, 153, 0); font-size:13px; margin:0px; margin-bottom:2px; }
+
+.unidadeIcon 											{position: absolute; height:35px; width:33px; background:url(../img/icon.png) -10px -8px; top:18px; left:5px;}
+
+.unidadeIcon2											{position: absolute; height:35px; width:33px; background:url(../img/icon.png) -10px -8px; top:18px; left:5px;}
+
+.unidadeIcon3 											{position: absolute; height:35px; width:33px; background:url(../img/icon.png) -10px -8px; top:18px; left:5px;}
+
+.unidadeCheck:after 									{content: ''; display: block; width: 35px; height: 33px; background:url(../img/icon.png) -96px -8px;}
+
+
+/*--------------------------------------Bottom--------------------------------------*/
+
+
+div.bottom												{height: 105px; position:relative;}
+
+.iconBottom 											{padding:0px; margin:5px 0px 0px -5px;}
+
+	.iconBottom li											{display:inline-block; margin-left:29px;}
+
+		.iconBottom li a 	 									{font: 14px calibri, Serif; color: rgb(113,119,104); text-decoration:none;}
+
+.cafeIcon 												{height:50px; width:50px; background: url(../img/icon.png) -16px -59px no-repeat; margin-left:10px;}
+
+.enqueteIcon 											{height:49px; width:54px; background: url(../img/icon.png) -14px -118px no-repeat; margin-left:-3px;}
+
+.glossarioIcon 											{height:50px; width:50px; background: url(../img/icon.png) -14px -180px no-repeat; margin-left:0px;}		
+
+.facebookIcon 											{display:block; height:40px; width:60px; background:url(../img/icon.png) no-repeat -9px -239px; text-indent: -9999px; position:absolute; top:48px; left:582px;}																		
+
+
+
+
