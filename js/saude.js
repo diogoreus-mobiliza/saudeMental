@@ -42,5 +42,68 @@ $(document).ready(function(){
 			$(unidadeIcon3).addClass('unidadeCheck');
 		}
 	});
+
+	$(".facebookIcon").on({
+		mouseenter:function(e){
+			$(this).css('background', 'url(img/icon.png) -92px -63px');
+		},
+		mouseleave:function(e){
+			$(this).css('background-position', '-4px -63px');
+		}
+	});
+
+	$(".cafeIcon").on({
+		mouseenter:function(e){
+			$(this).css('background', 'url(img/icon.png) -93px -142px');
+		},
+		mouseleave:function(e){
+			$(this).css('background-position', '-4px -142px');
+		}
+	});
+
+	$(".enqueteIcon").on({
+		mouseenter:function(e){
+			$(this).css('background', 'url(img/icon.png) -92px -222px');
+		},
+		mouseleave:function(e){
+			$(this).css('background-position', '-4px -222px');
+		}
+	});
+
+	$(".complementarIcon").on({
+		mouseenter:function(e){
+			$(this).css('background', 'url(img/icon.png) -92px -302px');
+		},
+		mouseleave:function(e){
+			$(this).css('background-position', '-4px -302px');
+		}
+	});
+
+	$(".ferramentaIcon").on({
+		mouseenter:function(e){
+			$(this).css('background', 'url(img/icon.png) -92px -382px');
+		},
+		mouseleave:function(e){
+			$(this).css('background-position', '-4px -382px');
+		}
+	});
+
+	$(".glossarioIcon").on({
+		mouseenter:function(e){
+			$(this).css('background', 'url(img/icon.png) -92px -462px');
+		},
+		mouseleave:function(e){
+			$(this).css('background-position', '-4px -462px');
+		}
+	});
+
+	$(".forumIcon").on({
+		mouseenter:function(e){
+			$(this).css('background', 'url(img/icon.png) -92px -542px');
+		},
+		mouseleave:function(e){
+			$(this).css('background-position', '-4px -542px');
+		}
+	});
 });
 
