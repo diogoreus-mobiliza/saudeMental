@@ -5,11 +5,19 @@
 		<meta name="author" content="Hyago Goularte">
 		<script type="text/javascript" src="js/jquery.1.10.2.min.js"></script>
 
+		<link type="text/css" rel="stylesheet" href="css/default.css"  />
+
+		<!-- Responsive Slides -->
 		<link rel="stylesheet" href="css/responsiveslides/responsiveslides.css">
 		<link rel="stylesheet" href="css/responsiveslides/themes.css">			
 		<script type="text/javascript" src="js/responsiveslides/responsiveSlider.js"></script>
 		<script type="text/javascript" src="js/responsiveslides/baconIpsum.js"></script>
+		<!-- FIM Responsive Slides -->
 
+		<!-- VideoJS -->
+		<link type="text/css" rel="stylesheet" href="css/video-js.css"  />
+		<script type="text/javascript" src="js/video.js" ></script>
+		<!-- FIM VideoJS -->
 
 	</head>
 	<style type="text/css">
@@ -23,7 +31,8 @@
 		  src: url("http://localhost/projetos/TimelineJS/css/font/");
 		  src: local("CronosPro-Bold"), url("http://localhost/projetos/TimelineJS/css/font/");
 		}
-		body{ font-family: CronosPro-Regular; margin: 0px; background: #fff; }
+
+		body{ font-family: CronosPro-Regular; margin: 0px; background: black; }
 		/* HELP */
 		.cf:before, .cf:after {	content:"";	display:table; }
 		.cf:after {clear:both;}
@@ -34,13 +43,19 @@
 		.block { display: block; }
 		/* FIM HELP */
 		#principal {
-			 margin: 0 auto; min-height: 400px; width: 640px; /* border: 1px solid black; */
+			 margin: 0 auto; min-height: 400px; width: 640px; background: url("img/icones/background_ancoragem.png") #e3e6ec;/* border: 1px solid black; */
 		}
 		#conteudo {
-			margin: 0px auto; width: 640px; min-height: 400px; /* border: 1px solid black; */ background: #D8EFFF;
+			margin: 0px auto; width: 640px; min-height: 400px; /* border: 1px solid black; */ ;
 		}
 		#topo {
-			margin: 0px; background: #0E7BC0;/*background: url("img/filete.png"); background-repeat: repeat-x; */ height: 140px; width: 100%;
+			margin: 0px; height: 140px; width: 100%; position: relative; z-index: 5;
+		}
+		#topo div {
+		    background: url("img/icones/cabecalho_ancoragem.png") no-repeat scroll 0 0 transparent;
+		    height: 110px;
+		    margin: 0 0 0 -6px;
+		    padding: 30px;
 		}
 		#topo h1 {
 			padding: 0px; margin: 0px 0px 0px 10px; color: white; font-weight: bolder;
@@ -89,7 +104,7 @@
 		}
 		/* FIM BANNER */
 
-		/*Caixa de texto BANNER*/	 
+		/* CAIXA TEXTO BANNER */	 
 		.caixaTextoBanner {
 			width: 620px; background: #0e7bc0; padding: 10px; display: none;   /* margin: -20px 0 0 -20px; */
 		}
@@ -103,41 +118,25 @@
 		.rslides {
 			position: relative;
 		}
-		/**/
-		/**/
-		#atividade1 {
-			width: 425px; height:70px; background: #f2f6cc;  position: relative;
+		/* FIM CAIXA TEXTO BANNER */
+
+		/* CAIXA ATIVIDADE DE APRENDIZADO */
+		.atividadeDeAprendizagem {
+			position: relative; background: orange; width: 750px; height:110px; left: -55px;
 		}
-		#setaAtividade1 {
-			position:absolute; top: -10; left: -60; right: 0; height: 59px; width: 157px;
+		.setaAtividadeDeAprendizagem {
+			width: 157px; height:59px; margin: -29px; position: absolute; background: url('img/icones/setaAtividadeDeAprendizagem.png');
 		}
-		#setaAtividade1 img {
-			width:157px; height:59px;
+		.videoAtividadeDeAprendizagem {
+			position: absolute; width: 390px; height:220px; top: -45; right: 0px; padding: 5px; background: #FFF;
 		}
-		#imgDocAtividade1 {
-			width:23px; height:31; margin-top: 5px; padding: 5px;
+		.iconeAtividadeDeAprendizagem {
+			background: url('img/icones/compAtividadeDeAprendizagem.png'); width: 39px; height: 39px; margin: 40px 0px 0px 15px;
 		}
-		#textoAtividade1 {
-			width:265px; height:60px; padding: 5px;
+		.textoAtividadeDeAprendizagem {
+			padding: 35px 10px 0px 10px; width: 285px;
 		}
-		#atividade1 span {
-			font-size: 13px;
-		}
-		/**/
-		/* Status atividade */
-		
-		.caixaStatusAtividade {
-			background: none repeat scroll 0 0 #ffcc33;
-		    height: 30px;
-		    margin: 72px 0 0 -3px;
-		    width: 426px;
-		    text-align: center;
-		    font-weight: bolder;
-		}
-		.caixaAtividadeConcluida { background: url("img/icones/barraAtividadeConcluida.png") repeat-x; }
-		.caixaAtividadeConcluida { background: #ffcc33; }
-		.bordaAtividadeConcluida { border: 3px solid green; }
-		.bordaAtividadePendente { border: 3px solid #ffcc33; }
+
 		/**/
 	</style>
 	
@@ -145,17 +144,12 @@
 		<div id="principal">
 			<div id="conteudo">
 				<div id="topo">
-					<div style="padding: 30px;">
+					<div>
 						<h1>Unidade 1 - Uso de drogas na sociedade</h1>
 						<h3>Módulo 1 - Drogas e sociedade</h3>
 					</div>
 				</div>
 				<div id="corpo">
-					<div class="texto" style="">
-						<span>
-							Beef chuck strip steak tail. Meatloaf pancetta ball tip bresaola hamburger andouille biltong capicola ribeye beef pig prosciutto cow. T-bone pig prosciutto, cow short loin jowl salam
-						</span>
-					</div>
 					<!-- COMEÇO BANNER -->
 					<div id="banner">
 						<ul class="rslides">
@@ -263,56 +257,34 @@
 					</div>
 
 					<div class="texto">
-						<div id="img1" class="img right">
-							<img src="img/drugs.png" width="200" height="110" title="Imagem 1" alt="Imagem 1">	
-						</div>
 						<span>
-							<p>
-								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
-							</p>
 							<p>
 								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
 							</p>
 						</span>
 					</div>
 					<br class="cf"/>
-					<br class="cf"/>
-					<br class="cf"/>
-					<br class="cf"/>
-					<br class="cf"/>
-					<div class="texto">
-						<div id="atividade1" class="right" >
-							<div id="setaAtividade1">
-								<img src="img/iconessetaAtividadeDeAprendizagem.png" alt="Seta Atividade Aprendizagem" title="Seta Atividade Aprendizagem"/>
-							</div>
-							<div class="left" style="width:150px; height:70px;">
-								<img id="imgDocAtividade1" src="img/papelNaoSelecionado.png" alt="..." class="right"/>
-							</div>
-							<div id="textoAtividade1" class="left">
-								<h5>Bacon ipsum dolor sit amet por amet por amet</h5>
-								<span>
-									Ball tip short loin drumstick tri-tip. Jowl rump drumstick pig pancetta.							
-								</span>
-							</div>
-							<!-- Etapas -->
-							<div id="atividade1Concluida" class="caixaStatusAtividade hide bordaAtividadeConcluida">
-								<div class="left" style="background: url()">
-									<img src="img/atividadeConcluida.png" alt="Atividade Concluida"/>
-								</div> 
-								<span class="left">
-									Atividade concluida!
-								</span>
-							</div>
-							<div id="atividade1Pendente" class="caixaStatusAtividade hide bordaAtividadePendente">
-								<div class="left" style="margin: 10px; margin-left: 30%">
-									<img src="img/atividadePendente.png" alt="Atividade Pendente" />
-								</div> 
-								<span class="left"  style="margin: 7px; font-size: 16px;">
-									Atividade pendente!
-								</span>
-							</div>
+					
+					<div class="atividadeDeAprendizagem">
+						<div class="setaAtividadeDeAprendizagem"></div>
+						<div class="left iconeAtividadeDeAprendizagem"></div>
+
+						<div class="textoAtividadeDeAprendizagem left">
+							Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum.
+						</div>
+						<!-- <div style="height:55px; width: 350px; height: 20px; text-align: center;">
+							Clique em play para assistir!
+						</div> -->
+						<div class="videoAtividadeDeAprendizagem">
+							<video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+						      	   data-setup="{}">
+						   		<source src="video/video.mp4" type='video/mp4' />
+						    </video>
 						</div>
 					</div>
+					
+					<div style="width: 600px; height:130px;"></div>
+					
 					<div class="cf"></div>
 				</div>
 				<div class="cf"></div>
