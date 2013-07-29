@@ -32,15 +32,17 @@
 		  src: local("CronosPro-Bold"), url("http://localhost/projetos/TimelineJS/css/font/");
 		}
 
-		body{ font-family: CronosPro-Regular; margin: 0px; background: black; }
+		body{ font-family: CronosPro-Regular; margin: 0px; background: #fff; }
 		/* HELP */
-		.cf:before, .cf:after {	content:"";	display:table; }
-		.cf:after {clear:both;}
-		.cf {zoom:1;}		/* For IE 6/7 (trigger hasLayout) */
-		.left { float: left; }
-		.right { float: right; }
-		.hide { display: none; }
-		.block { display: block; }
+		.cf:before, 
+		.cf:after 	{ content:""; display: table; }
+		.cf:after 	{ clear:both; }
+		.cf 		{ zoom:1; }		/* For IE 6/7 (trigger hasLayout) */
+		.left 		{ float: left; }
+		.right 		{ float: right; }
+		.hide 		{ display: none; }
+		.block 		{ display: block; }
+		.bolder 	{ font-weight: bolder; }
 		/* FIM HELP */
 		#principal {
 			 margin: 0 auto; min-height: 400px; width: 640px; background: url("img/icones/background_ancoragem.png") #e3e6ec;/* border: 1px solid black; */
@@ -97,10 +99,14 @@
 		}
 		
 		.setaSaberMais_Banner {
-			padding: 10px; float: left;
+			margin: 10px; float: left; background: url("img/icones/icon.png") -28px -625px; width: 10; height: 13px;
 		}
 		.textoSaberMais_Banner {
 			font-size: 11px; margin-top: 10px; color: white; float: left; 
+		}
+
+		.setaImportante_Banner {
+			width: 460px; height:180px;  position: absolute; background: url(img/icones/setaImportante_Banner.png) no-repeat;
 		}
 		/* FIM BANNER */
 
@@ -120,21 +126,57 @@
 		}
 		/* FIM CAIXA TEXTO BANNER */
 
-		/* CAIXA ATIVIDADE DE APRENDIZADO */
-		.atividadeDeAprendizagem {
-			position: relative; background: orange; width: 750px; height:110px; left: -55px;
+		/* CAIXA ATIVIDADE DE APRENDIZADO VIDEO */
+		.atividadeDeAprendizagemVIDEO {
+			position: relative; background: #fdf9ea; width: 750px; height:110px; left: -55px;
 		}
-		.setaAtividadeDeAprendizagem {
-			width: 157px; height:59px; margin: -29px; position: absolute; background: url('img/icones/setaAtividadeDeAprendizagem.png');
+		.setaAtividadeDeAprendizagemVIDEO {
+			width: 157px; height:59px; margin: -29px; position: absolute; background: url('img/icones/setaAtividadeDeAprendizagemDireita.png');
 		}
-		.videoAtividadeDeAprendizagem {
+		.setaAtividadeDeAprendizagemVIDEO div {
+			padding: 12px 0px 0px 30px;
+		}
+		.setaAtividadeDeAprendizagemVIDEO div span {
+			color: #fff;
+			font-size: 16px; 
+			font-weight: bolder;
+		}
+		.videoAtividadeDeAprendizagemVIDEO {
 			position: absolute; width: 390px; height:220px; top: -45; right: 0px; padding: 5px; background: #FFF;
 		}
-		.iconeAtividadeDeAprendizagem {
+		.iconeAtividadeDeAprendizagemVIDEO {
 			background: url('img/icones/compAtividadeDeAprendizagem.png'); width: 39px; height: 39px; margin: 40px 0px 0px 15px;
 		}
-		.textoAtividadeDeAprendizagem {
-			padding: 35px 10px 0px 10px; width: 285px;
+		.textoAtividadeDeAprendizagemVIDEO {
+			padding: 35px 10px 0px 10px; width: 285px; height: 70px;
+		}
+		.textoTituloAtividadeDeAprendizagemVIDEO {
+			font-weight: bolder;
+		}
+		/**/
+		/**/	
+		.atividadeDeAprendizagemPDF {
+			position: relative; background: #fdf9ea; width: 400px; height:110px; margin: 0px auto;
+		}
+		.atividadeDeAprendizagemIconePDF {
+			background: url('img/icones/icon2.png') -25px -13px; width: 163px; height:160px; position:absolute; left: -68; top: -25px
+		}
+		.setaAtividadeDeAprendizagemPDF {
+			width: 157px; height:59px; position: absolute; top: -30px; right: -75px; background: url('img/icones/setaAtividadeDeAprendizagemEsquerda.png');
+		}
+		.setaAtividadeDeAprendizagemPDF div {
+			padding: 12px 0px 0px 30px;
+		}
+		.setaAtividadeDeAprendizagemPDF div span {
+			color: #fff;
+			font-size: 16px; 
+			font-weight: bolder;
+		}
+		.textoAtividadeDeAprendizagemPDF {
+		    height: 75px; padding: 30px 0 0 101px; width: 285px;
+		}
+		.textoTituloAtividadeDeAprendizagemPDF {
+			font-weight: bolder;
 		}
 
 		/**/
@@ -157,10 +199,10 @@
 							<li>
 								<div class="banner">
 									<div class="left" > 
-										<div style="width: 460px; height:180px;  position: absolute; background: url(img/icones/setaImportante_Banner.png) no-repeat;"></div>
+										<div class="setaImportanteBanner"></div>
 										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
-									<div id="" class="right" style="width: 290px; height:180px; background: white"> 
+									<div class="right" style="width: 290px; height:180px; background: white"> 
 										<div id="" class="titulo">
 											<h1>80%</h1>
 										</div>
@@ -170,7 +212,8 @@
 											</span>
 										</div>
 										<div id="saberMais_banner1" class="saberMais">
-											<img id="setaSaberMais_Banner1" class="setaSaberMais_Banner" src="img/icones/setaParaBaixo_SaberMais.png" alt="Clicar para abrir saber mais" title="Saber Mais" />
+											<div id="setaSaberMais_Banner1" class="setaSaberMais_Banner"></div>
+											
 											<span class="textoSaberMais_Banner">
 												Clique para saber mais
 											</span>
@@ -181,12 +224,12 @@
 							<!-- FIM BANNER 1 -->
 							<!-- BANNER 2 -->
 							<li>
-								<div class=" banner">
+								<div class="banner">
 									<div class="left" > 
-										<div style="width: 380px; height:180px;  position: absolute; background: url(img/icones/setaImportante_Banner.png) no-repeat;"></div>
+										<div class="setaImportanteBanner"></div>
 										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
-									<div id="" class="right" style="width: 290px; height:180px; background: white"> 
+									<div class="right" style="width: 290px; height:180px; background: white"> 
 										<div id="" class="titulo">
 											<h1>80%</h1>
 										</div>
@@ -196,7 +239,8 @@
 											</span>
 										</div>
 										<div id="saberMais_banner2" class="saberMais">
-											<img id="setaSaberMais_Banner2" class="setaSaberMais_Banner" src="img/icones/setaParaBaixo_SaberMais.png" alt="Clicar para abrir saber mais" title="Saber Mais" />
+											<div id="setaSaberMais_Banner2" class="setaSaberMais_Banner"></div>
+											
 											<span class="textoSaberMais_Banner">
 												Clique para saber mais
 											</span>
@@ -207,12 +251,12 @@
 							<!-- FIM BANNER 2 -->
 							<!-- BANNER 3 -->
 							<li>
-								<div class=" banner">
+								<div class="banner">
 									<div class="left" > 
-										<div style="width: 380px; height:180px;  position: absolute; background: url(img/icones/setaImportante_Banner.png) no-repeat;"></div>
+										<div class="setaImportanteBanner"></div>
 										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
-									<div id="" class="right" style="width: 290px; height:180px; background: white"> 
+									<div class="right" style="width: 290px; height:180px; background: white"> 
 										<div id="" class="titulo">
 											<h1>80%</h1>
 										</div>
@@ -222,7 +266,8 @@
 											</span>
 										</div>
 										<div id="saberMais_banner3" class="saberMais">
-											<img id="setaSaberMais_Banner3" class="setaSaberMais_Banner" src="img/icones/setaParaBaixo_SaberMais.png" alt="Clicar para abrir saber mais" title="Saber Mais" />
+											<div id="setaSaberMais_Banner3" class="setaSaberMais_Banner"></div>
+											
 											<span class="textoSaberMais_Banner">
 												Clique para saber mais
 											</span>
@@ -234,21 +279,21 @@
 						</ul>
 					</div>
 
-					<div id="caixaTextoBanner1" class="caixaTextoBanner" style="">
+					<div id="caixaTextoBanner1" class="caixaTextoBanner" >
 						<br />
 						<h2>Caixa 1</h2>
 						<span>
 							Beef chuck strip steak tail. Meatloaf pancetta ball tip bresaola hamburger andouille biltong capicola ribeye beef pig prosciutto cow. T-bone pig prosciutto, cow short loin jowl salami frankfurter pork loin pork chop. Biltong doner turducken salami capicola leberkas tri-tip pork loin ham spare ribs ham hock shank.
 						</span>
 					</div>
-					<div id="caixaTextoBanner2" class="caixaTextoBanner" style="">
+					<div id="caixaTextoBanner2" class="caixaTextoBanner" >
 						<br />
 						<h2>Caixa 2</h2>
 						<span>
 							Beef chuck strip steak tail. Meatloaf pancetta ball tip bresaola hamburger andouille biltong capicola ribeye beef pig prosciutto cow. T-bone pig prosciutto, cow short loin jowl salami frankfurter pork loin pork chop. Biltong doner turducken salami capicola leberkas tri-tip pork loin ham spare ribs ham hock shank.
 						</span>
 					</div>
-					<div id="caixaTextoBanner3" class="caixaTextoBanner" style="">
+					<div id="caixaTextoBanner3" class="caixaTextoBanner" >
 						<br />
 						<h2>Caixa 3</h2>
 						<span>
@@ -263,28 +308,77 @@
 							</p>
 						</span>
 					</div>
-					<br class="cf"/>
 					
-					<div class="atividadeDeAprendizagem">
-						<div class="setaAtividadeDeAprendizagem"></div>
-						<div class="left iconeAtividadeDeAprendizagem"></div>
-
-						<div class="textoAtividadeDeAprendizagem left">
-							Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum.
+					<div class="cf" style="width: 600px; height: 40px;"></div>
+					
+					<!-- Atividade de Aprendizagem TIPO VIDEO-->	
+					<div class="atividadeDeAprendizagemVIDEO">
+						<div class="setaAtividadeDeAprendizagemVIDEO">
+							<div>
+								<span>Atividade de Aprendizagem</span>
+							</div>
 						</div>
-						<!-- <div style="height:55px; width: 350px; height: 20px; text-align: center;">
-							Clique em play para assistir!
-						</div> -->
-						<div class="videoAtividadeDeAprendizagem">
+						<div class="left iconeAtividadeDeAprendizagemVIDEO"></div>
+
+						<div class="textoAtividadeDeAprendizagemVIDEO left">
+							<span class="bolder">Aprensetação de video:</span>
+							Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
+						</div>
+						<div class="videoAtividadeDeAprendizagemVIDEO">
 							<video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
 						      	   data-setup="{}">
 						   		<source src="video/video.mp4" type='video/mp4' />
 						    </video>
 						</div>
 					</div>
+					<!-- FIM Atividade de Aprendizagem -->	
+					<div class="cf" style="width: 600px; height: 75px;"></div>
+					<div class="texto">
+						<span>
+							<p>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
+							</p>
+							<br />
+							<p>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
+							</p>
+							<br />
+							<p>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
+							</p>
+							<br />
+							<p>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
+							</p>
+							<br />
+
+						</span>
+					</div>
 					
-					<div style="width: 600px; height:130px;"></div>
+				
 					
+					<div class="atividadeDeAprendizagemPDF" style="">
+						<div class="atividadeDeAprendizagemIconePDF" style=""></div>
+						<div class="textoAtividadeDeAprendizagemPDF">
+							<span class="bolder">Apresentação em powerpoint:</span>
+							Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
+						</div>
+						<div class="setaAtividadeDeAprendizagemPDF">
+							<div>
+								<span>
+									Atividade de Aprendizagem
+								</span>
+							</div>
+						</div>
+					</div>
+					
+				<div style="width: 600px; height:530px;"></div>
+
+
+
+
+
+
 					<div class="cf"></div>
 				</div>
 				<div class="cf"></div>
@@ -298,28 +392,28 @@
 			$("#saberMais_banner1").click(function () {
 				if ($("#caixaTextoBanner1").is(":hidden")) {
 					$("#caixaTextoBanner1").slideDown();
-					$("#setaSaberMais_Banner1").attr("src","img/icones/setaParaCima_SaberMais.png");
+					$(".setaSaberMais_Banner").css('background-position', '-58px -625px');
 				} else {
 					$("#caixaTextoBanner1").slideUp();
-					$("#setaSaberMais_Banner1").attr("src","img/icones/setaParaBaixo_SaberMais.png");
+					$(".setaSaberMais_Banner").css('background-position', '-28px -625px');
 				}
 			});
 			$("#saberMais_banner2").click(function () {
 				if ($("#caixaTextoBanner2").is(":hidden")) {
 					$("#caixaTextoBanner2").slideDown();
-					$("#setaSaberMais_Banner2").attr("src","img/icones/setaParaCima_SaberMais.png");
+					$(".setaSaberMais_Banner").css('background-position', '-58px -625px');
 				} else {
 					$("#caixaTextoBanner2").slideUp();
-					$("#setaSaberMais_Banner2").attr("src","img/icones/setaParaBaixo_SaberMais.png");
+					$(".setaSaberMais_Banner").css('background-position', '-28px -625px');
 				}
 			});
 			$("#saberMais_banner3").click(function () {
 				if ($("#caixaTextoBanner3").is(":hidden")) {
 					$("#caixaTextoBanner3").slideDown();
-					$("#setaSaberMais_Banner3").attr("src","img/icones/setaParaCima_SaberMais.png");
+					$(".setaSaberMais_Banner").css('background-position', '-58px -625px');
 				} else {
 					$("#caixaTextoBanner3").slideUp();
-					$("#setaSaberMais_Banner3").attr("src","img/icones/setaParaBaixo_SaberMais.png");
+					$(".setaSaberMais_Banner").css('background-position', '-28px -625px');
 				}
 			});
 
