@@ -9,7 +9,7 @@ $(document).ready(function(){
 //-------------------------------------HOVER--------------------------------------------------
 	$(".descricao1").on({
 		mouseenter:function(e){
-			$(unidadeIcon).css('background', 'url(img/icon.png) -53px -8px');
+			$(unidadeIcon).css('background', 'url(img/icones/icon.png) -53px -8px');
 		},
 		mouseleave:function(e){
 			$(unidadeIcon).css('background-position', '-10px -8px');
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 	$(".descricao2").on({
 		mouseenter:function(e){
-			$(unidadeIcon2).css('background', 'url(img/icon.png) -53px -8px');
+			$(unidadeIcon2).css('background', 'url(img/icones/icon.png) -53px -8px');
 		},
 		mouseleave:function(e){
 			$(unidadeIcon2).css('background-position', '-10px -8px');
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 	$(".descricao3").on({
 		mouseenter:function(e){
-			$(unidadeIcon3).css('background', 'url(img/icon.png) -53px -8px');
+			$(unidadeIcon3).css('background', 'url(img/icones/icon.png) -53px -8px');
 		},
 		mouseleave:function(e){
 			$(unidadeIcon3).css('background-position', '-10px -8px');
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 	$(".facebookIcon").on({
 		mouseenter:function(e){
-			$(this).css('background', 'url(img/icon.png) -92px -63px');
+			$(this).css('background', 'url(img/icones/icon.png) -92px -63px');
 		},
 		mouseleave:function(e){
 			$(this).css('background-position', '-4px -63px');
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 	$(".cafeIcon").on({
 		mouseenter:function(e){
-			$(this).css('background', 'url(img/icon.png) -93px -142px');
+			$(this).css('background', 'url(img/icones/icon.png) -93px -142px');
 		},
 		mouseleave:function(e){
 			$(this).css('background-position', '-4px -142px');
@@ -63,7 +63,7 @@ $(document).ready(function(){
 
 	$(".enqueteIcon").on({
 		mouseenter:function(e){
-			$(this).css('background', 'url(img/icon.png) -92px -222px');
+			$(this).css('background', 'url(img/icones/icon.png) -92px -222px');
 		},
 		mouseleave:function(e){
 			$(this).css('background-position', '-4px -222px');
@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 	$(".complementarIcon").on({
 		mouseenter:function(e){
-			$(this).css('background', 'url(img/icon.png) -92px -302px');
+			$(this).css('background', 'url(img/icones/icon.png) -92px -302px');
 		},
 		mouseleave:function(e){
 			$(this).css('background-position', '-4px -302px');
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
 	$(".ferramentaIcon").on({
 		mouseenter:function(e){
-			$(this).css('background', 'url(img/icon.png) -92px -382px');
+			$(this).css('background', 'url(img/icones/icon.png) -92px -382px');
 		},
 		mouseleave:function(e){
 			$(this).css('background-position', '-4px -382px');
@@ -90,7 +90,7 @@ $(document).ready(function(){
 
 	$(".glossarioIcon").on({
 		mouseenter:function(e){
-			$(this).css('background', 'url(img/icon.png) -92px -462px');
+			$(this).css('background', 'url(img/icones/icon.png) -92px -462px');
 		},
 		mouseleave:function(e){
 			$(this).css('background-position', '-4px -462px');
@@ -99,7 +99,7 @@ $(document).ready(function(){
 
 	$(".forumIcon").on({
 		mouseenter:function(e){
-			$(this).css('background', 'url(img/icon.png) -92px -542px');
+			$(this).css('background', 'url(img/icones/icon.png) -92px -542px');
 		},
 		mouseleave:function(e){
 			$(this).css('background-position', '-4px -542px');
