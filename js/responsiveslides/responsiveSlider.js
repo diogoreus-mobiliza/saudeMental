@@ -273,7 +273,13 @@
           });
         }
 
-        $this.find('#saberMais_banner').click(function () {   
+        $this.find('#saberMais_banner1').click(function () {   
+              clearInterval(rotate);
+        });
+        $this.find('#saberMais_banner2').click(function () {   
+              clearInterval(rotate);
+        });
+        $this.find('#saberMais_banner3').click(function () {   
               clearInterval(rotate);
         });
 
@@ -289,6 +295,7 @@
 
             // Get index of clicked tab
             var idx = $tabs.index(this);
+            $(".caixaTextoBanner").slideUp();
             console.log(idx);
 
             // Break if element is already active or currently animated
@@ -328,7 +335,8 @@
           } else {
             $this.after(navMarkup);
           }
-/*
+
+/*    
           function teste(x){   
             var prev = $('.prev'),
                 next = $('.next');
@@ -377,6 +385,8 @@
             var idx = $slide.index($visibleClass),
               prevIdx = idx - 1,
               nextIdx = idx + 1 < length ? index + 1 : 0;
+              $(".caixaTextoBanner").slideUp();
+              console.log(idx);
 
             // Go to slide
             slideTo($(this)[0] === $prev[0] ? prevIdx : nextIdx);

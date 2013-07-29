@@ -14,18 +14,25 @@
 	</head>
 	<style type="text/css">
 		@font-face {
-			font-family: Nome da Fonte, Verdana, Arial, Tahoma, Sans-Serif;
-			src: url(enderecodafonte);
+		  font-family: "CronosPro-Regular";
+		  src: url("http://localhost/projetos/TimelineJS/css/font/");
+		  src: local("CronosPro-Regular"), url("http://localhost/projetos/TimelineJS/css/font/");
 		}
-		body{font-family: calibri; margin: 0px;}
+		@font-face {
+		  font-family: "CronosPro-Bold";
+		  src: url("http://localhost/projetos/TimelineJS/css/font/");
+		  src: local("CronosPro-Bold"), url("http://localhost/projetos/TimelineJS/css/font/");
+		}
+		body{ font-family: CronosPro-Regular; margin: 0px; background: #fff; }
+		/* HELP */
 		.cf:before, .cf:after {	content:"";	display:table; }
 		.cf:after {clear:both;}
 		.cf {zoom:1;}		/* For IE 6/7 (trigger hasLayout) */
-
 		.left { float: left; }
 		.right { float: right; }
 		.hide { display: none; }
 		.block { display: block; }
+		/* FIM HELP */
 		#principal {
 			 margin: 0 auto; min-height: 400px; width: 640px; /* border: 1px solid black; */
 		}
@@ -42,22 +49,21 @@
 			padding: 0px; color: #cbf6f3; margin: 5px 0px 0px 15px; 
 		}
 		#corpo {
-			/*width: 620px;*/ min-height: 400px; padding: 20px;
+			/*width: 620px;*/ min-height: 400px; padding: 0;
 		}
-		#texto1 {
-			width: 100%; min-height: 140px; position: relative;
-		}
-		#texto1 span {
-
+		.texto {
+			width: 600px; min-height: 10px; padding: 20px;
 		}
 		.img {
 			padding: 10px;
 		}
+
+		/* BANNER */
 		#banner {
-			position: relative; 
+			width: 750px; margin: 0px 0px 0px -55px; position: relative; height: 180px;
 		}
 		.banner {
-			width: 600px; height: 190px;  text-align: left;
+			/*width: 600px;*/ height: 180px;  text-align: left;
 		}
 		.banner .titulo {
 			width: 220px; height: 45px;
@@ -74,23 +80,26 @@
 		.saberMais {
 			width: 140px; height: 35px; background: #0e7bc0; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px; cursor: pointer;
 		}
-		#setaSaberMais_Banner {
+		
+		.setaSaberMais_Banner {
 			padding: 10px; float: left;
 		}
-		#textoSaberMais_Banner {
+		.textoSaberMais_Banner {
 			font-size: 11px; margin-top: 10px; color: white; float: left; 
 		}
+		/* FIM BANNER */
 
-		/*Caixa de texto BANNER*/	
-		#caixaTextoBanner {
-			position: absolute; width: 580px; height: 110px; background: #0e7bc0; top: 180px; left: 0px; padding: 10px; display: none;
+		/*Caixa de texto BANNER*/	 
+		.caixaTextoBanner {
+			width: 620px; background: #0e7bc0; padding: 10px; display: none;   /* margin: -20px 0 0 -20px; */
 		}
-		#caixaTextoBanner h2 {
+		.caixaTextoBanner h2 {
 			padding: 0px 0px 10px 0px; margin: 0px; color: #fff; height: 30px; width: 100%;
 		}
-		#caixaTextoBanner span {
-			padding: 0px; margin: 0px; font-size: 12px; color: #fff; max-height: 70px;
+		.caixaTextoBanner span {
+			padding: 0px; margin: 0px; font-size: 12px; color: #fff;
 		}
+
 		.rslides {
 			position: relative;
 		}
@@ -125,7 +134,7 @@
 		    text-align: center;
 		    font-weight: bolder;
 		}
-		.caixaAtividadeConcluida { background: url("img/barraAtividadeConcluida.png") repeat-x; }
+		.caixaAtividadeConcluida { background: url("img/icones/barraAtividadeConcluida.png") repeat-x; }
 		.caixaAtividadeConcluida { background: #ffcc33; }
 		.bordaAtividadeConcluida { border: 3px solid green; }
 		.bordaAtividadePendente { border: 3px solid #ffcc33; }
@@ -142,16 +151,22 @@
 					</div>
 				</div>
 				<div id="corpo">
+					<div class="texto" style="">
+						<span>
+							Beef chuck strip steak tail. Meatloaf pancetta ball tip bresaola hamburger andouille biltong capicola ribeye beef pig prosciutto cow. T-bone pig prosciutto, cow short loin jowl salam
+						</span>
+					</div>
+					<!-- COMEÇO BANNER -->
 					<div id="banner">
 						<ul class="rslides">
-							<!-- INICIO SLIDE 1 -->
+							<!-- BANNER 1 -->
 							<li>
-								<div class="left banner">
-									<div id="" class="left" > 
-										<div style="width: 380px; height:180px;  position: absolute; background: url(img/setaImportante_Banner.png) no-repeat;"></div>
-										<img src="img/banner.png" class="" width="380px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
+								<div class="banner">
+									<div class="left" > 
+										<div style="width: 460px; height:180px;  position: absolute; background: url(img/icones/setaImportante_Banner.png) no-repeat;"></div>
+										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
-									<div id="" class="right" style="width: 220px; height:180px; background: white"> 
+									<div id="" class="right" style="width: 290px; height:180px; background: white"> 
 										<div id="" class="titulo">
 											<h1>80%</h1>
 										</div>
@@ -160,29 +175,24 @@
 												Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo
 											</span>
 										</div>
-										<div id="saberMais_banner" class="saberMais">
-											<img id="setaSaberMais_Banner" src="img/setaParaBaixo_SaberMais.png" alt="Clicar para abrir saber mais" title="Saber Mais" />
-											<span id="textoSaberMais_Banner">
+										<div id="saberMais_banner1" class="saberMais">
+											<img id="setaSaberMais_Banner1" class="setaSaberMais_Banner" src="img/icones/setaParaBaixo_SaberMais.png" alt="Clicar para abrir saber mais" title="Saber Mais" />
+											<span class="textoSaberMais_Banner">
 												Clique para saber mais
 											</span>
 										</div>
 									</div>
-									<div id="caixaTextoBanner">
-										<h2>Vivamus vehicula nulla nec elit cursus</h2>
-										<span>
-											Beef chuck strip steak tail. Meatloaf pancetta ball tip bresaola hamburger andouille biltong capicola ribeye beef pig prosciutto cow. T-bone pig prosciutto, cow short loin jowl salami frankfurter pork loin pork chop. Biltong doner turducken salami capicola leberkas tri-tip pork loin ham spare ribs ham hock shank.
-										</span>
-									</div>
-								</div>
+								</div>	
 							</li>
-							<!-- FIM SLIDE 1 -->
-							<!-- INICIO SLIDE 2 -->
+							<!-- FIM BANNER 1 -->
+							<!-- BANNER 2 -->
 							<li>
-								<div class="left banner">
-									<div id="" class="left" > 
-										<img src="img/banner.png" class="" width="380px" height="180px"id="" alt="Imagem banner" title="Titulo da imagem de banner" />
+								<div class=" banner">
+									<div class="left" > 
+										<div style="width: 380px; height:180px;  position: absolute; background: url(img/icones/setaImportante_Banner.png) no-repeat;"></div>
+										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
-									<div id="" class="right" style="width: 220px; height:180px; background: white"> 
+									<div id="" class="right" style="width: 290px; height:180px; background: white"> 
 										<div id="" class="titulo">
 											<h1>80%</h1>
 										</div>
@@ -191,17 +201,24 @@
 												Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo
 											</span>
 										</div>
+										<div id="saberMais_banner2" class="saberMais">
+											<img id="setaSaberMais_Banner2" class="setaSaberMais_Banner" src="img/icones/setaParaBaixo_SaberMais.png" alt="Clicar para abrir saber mais" title="Saber Mais" />
+											<span class="textoSaberMais_Banner">
+												Clique para saber mais
+											</span>
+										</div>
 									</div>
-								</div>
+								</div>	
 							</li>
-							<!-- FIM SLIDE 2 -->
-							<!-- INICIO SLIDE 3 -->
+							<!-- FIM BANNER 2 -->
+							<!-- BANNER 3 -->
 							<li>
-								<div class="left banner">
-									<div id="" class="left" > 
-										<img src="img/banner.png" class="" width="380px" height="180px"id="" alt="Imagem banner" title="Titulo da imagem de banner" />
+								<div class=" banner">
+									<div class="left" > 
+										<div style="width: 380px; height:180px;  position: absolute; background: url(img/icones/setaImportante_Banner.png) no-repeat;"></div>
+										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
-									<div id="" class="right" style="width: 220px; height:180px; background: white"> 
+									<div id="" class="right" style="width: 290px; height:180px; background: white"> 
 										<div id="" class="titulo">
 											<h1>80%</h1>
 										</div>
@@ -210,13 +227,42 @@
 												Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo
 											</span>
 										</div>
+										<div id="saberMais_banner3" class="saberMais">
+											<img id="setaSaberMais_Banner3" class="setaSaberMais_Banner" src="img/icones/setaParaBaixo_SaberMais.png" alt="Clicar para abrir saber mais" title="Saber Mais" />
+											<span class="textoSaberMais_Banner">
+												Clique para saber mais
+											</span>
+										</div>
 									</div>
-								</div>
+								</div>	
 							</li>
-							<!-- FIM SLIDE 3 -->
+							<!-- FIM BANNER 3 -->
 						</ul>
 					</div>
-					<div id="texto1">
+
+					<div id="caixaTextoBanner1" class="caixaTextoBanner" style="">
+						<br />
+						<h2>Caixa 1</h2>
+						<span>
+							Beef chuck strip steak tail. Meatloaf pancetta ball tip bresaola hamburger andouille biltong capicola ribeye beef pig prosciutto cow. T-bone pig prosciutto, cow short loin jowl salami frankfurter pork loin pork chop. Biltong doner turducken salami capicola leberkas tri-tip pork loin ham spare ribs ham hock shank.
+						</span>
+					</div>
+					<div id="caixaTextoBanner2" class="caixaTextoBanner" style="">
+						<br />
+						<h2>Caixa 2</h2>
+						<span>
+							Beef chuck strip steak tail. Meatloaf pancetta ball tip bresaola hamburger andouille biltong capicola ribeye beef pig prosciutto cow. T-bone pig prosciutto, cow short loin jowl salami frankfurter pork loin pork chop. Biltong doner turducken salami capicola leberkas tri-tip pork loin ham spare ribs ham hock shank.
+						</span>
+					</div>
+					<div id="caixaTextoBanner3" class="caixaTextoBanner" style="">
+						<br />
+						<h2>Caixa 3</h2>
+						<span>
+							Beef chuck strip steak tail. Meatloaf pancetta ball tip bresaola hamburger andouille biltong capicola ribeye beef pig prosciutto cow. T-bone pig prosciutto, cow short loin jowl salami frankfurter pork loin pork chop. Biltong doner turducken salami capicola leberkas tri-tip pork loin ham spare ribs ham hock shank.
+						</span>
+					</div>
+
+					<div class="texto">
 						<div id="img1" class="img right">
 							<img src="img/drugs.png" width="200" height="110" title="Imagem 1" alt="Imagem 1">	
 						</div>
@@ -230,10 +276,14 @@
 						</span>
 					</div>
 					<br class="cf"/>
-					<div id="texto2">
+					<br class="cf"/>
+					<br class="cf"/>
+					<br class="cf"/>
+					<br class="cf"/>
+					<div class="texto">
 						<div id="atividade1" class="right" >
 							<div id="setaAtividade1">
-								<img src="img/setaAtividadeDeAprendizagem.png" alt="Seta Atividade Aprendizagem" title="Seta Atividade Aprendizagem"/>
+								<img src="img/iconessetaAtividadeDeAprendizagem.png" alt="Seta Atividade Aprendizagem" title="Seta Atividade Aprendizagem"/>
 							</div>
 							<div class="left" style="width:150px; height:70px;">
 								<img id="imgDocAtividade1" src="img/papelNaoSelecionado.png" alt="..." class="right"/>
@@ -246,7 +296,7 @@
 							</div>
 							<!-- Etapas -->
 							<div id="atividade1Concluida" class="caixaStatusAtividade hide bordaAtividadeConcluida">
-								<div class="left">
+								<div class="left" style="background: url()">
 									<img src="img/atividadeConcluida.png" alt="Atividade Concluida"/>
 								</div> 
 								<span class="left">
@@ -272,16 +322,35 @@
 		<script type="text/javascript">
 
 		$(document).ready(function(){
-			inicializaScorm();
-			$("#saberMais_banner").click(function () {
-				if ($("#caixaTextoBanner").is(":hidden")) {
-					$("#caixaTextoBanner").slideDown();
-					$("#setaSaberMais_Banner").attr("src","img/setaParaCima_SaberMais.png");
+
+			$("#saberMais_banner1").click(function () {
+				if ($("#caixaTextoBanner1").is(":hidden")) {
+					$("#caixaTextoBanner1").slideDown();
+					$("#setaSaberMais_Banner1").attr("src","img/icones/setaParaCima_SaberMais.png");
 				} else {
-					$("#caixaTextoBanner").slideUp();
-					$("#setaSaberMais_Banner").attr("src","img/setaParaBaixo_SaberMais.png");
+					$("#caixaTextoBanner1").slideUp();
+					$("#setaSaberMais_Banner1").attr("src","img/icones/setaParaBaixo_SaberMais.png");
 				}
 			});
+			$("#saberMais_banner2").click(function () {
+				if ($("#caixaTextoBanner2").is(":hidden")) {
+					$("#caixaTextoBanner2").slideDown();
+					$("#setaSaberMais_Banner2").attr("src","img/icones/setaParaCima_SaberMais.png");
+				} else {
+					$("#caixaTextoBanner2").slideUp();
+					$("#setaSaberMais_Banner2").attr("src","img/icones/setaParaBaixo_SaberMais.png");
+				}
+			});
+			$("#saberMais_banner3").click(function () {
+				if ($("#caixaTextoBanner3").is(":hidden")) {
+					$("#caixaTextoBanner3").slideDown();
+					$("#setaSaberMais_Banner3").attr("src","img/icones/setaParaCima_SaberMais.png");
+				} else {
+					$("#caixaTextoBanner3").slideUp();
+					$("#setaSaberMais_Banner3").attr("src","img/icones/setaParaBaixo_SaberMais.png");
+				}
+			});
+
 
 			$(function() {
 				$(".rslides").responsiveSlides({
@@ -290,16 +359,16 @@
 					timeOut: 1000,
 					nav: true,
 					speed: 700,
-					maxwidth: 600,
+					maxwidth: 750,
 					namespace: "centered-btns"
 				});
 			});
 
 			$("#imgDocAtividade1").mouseover(function(){
-				$("#imgDocAtividade1").attr("src","img/papelMouseOver.png");
+				$("#imgDocAtividade1").attr("src","img/icones/papelMouseOver.png");
 			});
 			$("#imgDocAtividade1").mouseout(function(){
-				$("#imgDocAtividade1").attr("src","img/papelNaoSelecionado.png");
+				$("#imgDocAtividade1").attr("src","img/icones/papelNaoSelecionado.png");
 			});
 
 			/*
