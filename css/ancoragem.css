@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "CronosPro-Regular";
+  src: url("http://localhost/projetos/TimelineJS/css/font/");
+  src: local("CronosPro-Regular"), url("http://localhost/projetos/TimelineJS/css/font/");
+}
+@font-face {
+  font-family: "CronosPro-Bold";
+  src: url("http://localhost/projetos/TimelineJS/css/font/");
+  src: local("CronosPro-Bold"), url("http://localhost/projetos/TimelineJS/css/font/");
+}
+
+body{ font-family: CronosPro-Regular; margin: 0px; background: #fff; }
+
+/* 
+HELP 
+*/
+.cf:before, 
+.cf:after 	{ content:""; display: table; }
+.cf:after 	{ clear:both; }
+.cf 		{ zoom:1; }		/* For IE 6/7 (trigger hasLayout) */
+.left 		{ float: left; }
+.right 		{ float: right; }
+.hide 		{ display: none; }
+.block 		{ display: block; }
+.bolder 	{ font-weight: bolder; }
+/* 
+FIM HELP 
+*/
+
+#principal {
+	 margin: 0 auto; min-height: 400px; width: 640px; background: url("../img/icones/background_ancoragem.png") #e3e6ec;/* border: 1px solid black; */
+}
+#topo {
+	margin: 0px; height: 140px; width: 100%; position: relative; z-index: 5;
+}
+#topo div {
+    background: url("../img/icones/cabecalho_ancoragem.png") no-repeat scroll 0 0 transparent;
+    height: 110px;
+    margin: 0 0 0 -6px;
+    padding: 30px;
+}
+#topo h1 {
+	padding: 0px; margin: 0px 0px 0px 10px; color: white; font-weight: bolder;
+}
+#topo h3 {
+	padding: 0px; color: #cbf6f3; margin: 5px 0px 0px 15px; 
+}
+#corpo {
+	/*width: 620px;*/ min-height: 400px; padding: 0;
+}
+.texto {
+	width: 600px; min-height: 10px; padding: 20px;
+}
+.img {
+	padding: 10px;
+}
+
+/* 
+	BANNER 
+*/
+#banner {
+	width: 750px; margin: 0px 0px 0px -55px; position: relative; height: 180px;
+}
+.banner {
+	height: 180px;  text-align: left;
+}
+.banner .titulo {
+	width: 220px; height: 45px;
+}
+.banner .titulo h1 {
+	margin: 0px 10px 0px  15px; padding: 0px 0px 0px  0px; font-size: 40px; color: #ff6c00;
+}
+.banner .conteudo {
+	font-size: 16px; color: #ffa200; margin: 0px 10px 0px 15px; padding: 0px 0px 0px 0px; font-weight: bold; height: 100px;
+}
+.banner .conteudo span {
+	height: 90px;
+}
+.saberMais {
+	width: 140px; height: 35px; background: #0e7bc0; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px; cursor: pointer;
+}
+
+.setaSaberMais_Banner {
+	margin: 10px; float: left; background: url("../img/icones/icon.png") -28px -625px; width: 10; height: 13px;
+}
+.textoSaberMais_Banner {
+	font-size: 11px; margin-top: 10px; color: white; float: left; 
+}
+
+.setaImportante_Banner {
+	width: 460px; height:180px;  position: absolute; background: url('../img/icones/setaImportante_Banner.png') no-repeat;
+}
+
+
+/* 
+	CAIXA TEXTO BANNER 
+*/	 
+.caixaTextoBanner {
+	width: 620px; background: #0e7bc0; padding: 10px; display: none;   /* margin: -20px 0 0 -20px; */
+}
+.caixaTextoBanner h2 {
+	padding: 0px 0px 10px 0px; margin: 0px; color: #fff; height: 30px; width: 100%;
+}
+.caixaTextoBanner span {
+	padding: 0px; margin: 0px; font-size: 12px; color: #fff;
+}
+
+.rslides {
+	position: relative;
+}
+/* 
+	FIM CAIXA TEXTO BANNER 
+*/
+
+/* 
+	FIM BANNER 
+*/
+
+
+/* 
+	VIDEO 
+*/
+.corpoAtividadeDeAprendizagemTipoVIDEO {
+	width: 100%; height:185px; margin-top: 46px;
+}
+
+/* @ CAIXA ATIVIDADE DE APRENDIZADO VIDEO 1  @ */
+.atividadeDeAprendizagemVIDEO1 {
+	position: relative; background: #fdf9ea; width: 750px; height:110px; left: -55px;
+}
+.setaAtividadeDeAprendizagemVIDEO1 {
+	width: 157px; height:59px; margin: -29px; position: absolute; background: url('../img/icones/setaAtividadeDeAprendizagemDireita.png');
+}
+.setaAtividadeDeAprendizagemVIDEO1 div {
+	padding: 12px 0px 0px 30px;
+}
+.setaAtividadeDeAprendizagemVIDEO1 div span {
+	color: #fff;
+	font-size: 16px; 
+	font-weight: bolder;
+}
+.videoAtividadeDeAprendizagemVIDEO1 {
+	position: absolute; width: 390px; height:220px; top: -45; right: -2px; padding: 5px; background: #FFF;
+}
+.iconeAtividadeDeAprendizagemVIDEO1 {
+	background: url('../img/icones/compAtividadeDeAprendizagem.png'); width: 39px; height: 39px; margin: 40px 0px 0px 15px;
+}
+.textoAtividadeDeAprendizagemVIDEO1 {
+	padding: 35px 10px 0px 10px; width: 285px; height: 70px;
+}
+.textoTituloAtividadeDeAprendizagemVIDEO1 {
+	font-weight: bolder;
+}
+/**/
+
+/* CAIXA ATIVIDADE DE APRENDIZADO VIDEO 2 */
+.atividadeDeAprendizagemVIDEO2 {
+	position: relative; background: #fdf9ea; width: 750px; height:110px; left: -55px;
+}
+.setaAtividadeDeAprendizagemVIDEO2 {
+	width: 157px; height:59px; margin: -29px; right: 0px; position: absolute; background: url('../img/icones/setaAtividadeDeAprendizagemEsquerda.png');
+}
+.setaAtividadeDeAprendizagemVIDEO2 div {
+	padding: 12px 0px 0px 30px;
+}
+.setaAtividadeDeAprendizagemVIDEO2 div span {
+	color: #fff; font-size: 16px; font-weight: bolder;
+}
+.videoAtividadeDeAprendizagemVIDEO2 {
+	position: absolute; width: 390px; height:220px; top: -45; left: -2px; padding: 5px; background: #FFF;
+}
+.iconeAtividadeDeAprendizagemVIDEO2 {
+	background: url('../img/icones/compAtividadeDeAprendizagem.png'); width: 39px; height: 39px; margin: 38px 8px 0 0px;
+}
+.textoAtividadeDeAprendizagemVIDEO2 {
+	padding: 31px 7px 0 0; width: 285px; height: 70px;
+}
+.textoTituloAtividadeDeAprendizagemVIDEO2 {
+	font-weight: bolder;
+}
+/**/
+
+
+
+
+/* CAIXA ATIVIDADE DE APRENDIZADO PDF 01 */
+.corpoAtividadeDeAprendizagemTipoPDF {
+	width: 100%; height: 130px; margin-top: 30px;
+}
+.atividadeDeAprendizagemPDF_01 {
+	position: relative; background: #fdf9ea; width: 400px; height:110px; margin: 0px auto;
+}
+.atividadeDeAprendizagemIconePDF_01 {
+	background: url('../img/icones/iconePDF.png') no-repeat; width: 163px; height:160px; position:absolute; left: -68; top: -25px
+}
+.setaAtividadeDeAprendizagemPDF_01 {
+	width: 157px; height:59px; position: absolute; top: -30px; right: -75px; background: url('../img/icones/setaAtividadeDeAprendizagemEsquerda.png');
+}
+.setaAtividadeDeAprendizagemPDF_01 div {
+	padding: 12px 0px 0px 30px;
+}
+.setaAtividadeDeAprendizagemPDF_01 div span {
+	color: #fff;
+	font-size: 16px; 
+	font-weight: bolder;
+}
+.textoAtividadeDeAprendizagemPDF_01 {
+    height: 75px; padding: 30px 0 0 101px; width: 285px;
+}
+.textoTituloAtividadeDeAprendizagemPDF_01 {
+	font-weight: bolder;
+}
+/* FIM CAIXA ATIVIDADE DE APRENDIZADO PDF 01 */
+
+/* CAIXA ATIVIDADE DE APRENDIZADO PDF 02 */
+.atividadeDeAprendizagemPDF_02 {
+	position: relative; background: #fdf9ea; width: 400px; height:110px; margin: 0px auto;
+}
+.atividadeDeAprendizagemIconePDF_02 {
+	background: url('../img/icones/iconePDF.png') no-repeat; width: 163px; height:160px; position:absolute; right: -68; top: -25px
+}
+.setaAtividadeDeAprendizagemPDF_02 {
+	width: 157px; height:59px; position: absolute; top: -30px; left: -75px; 
+	background: url('../img/icones/setaAtividadeDeAprendizagemDireita.png');
+}
+.setaAtividadeDeAprendizagemPDF_02 div {
+	padding: 12px 0px 0px 30px;
+}
+.setaAtividadeDeAprendizagemPDF_02 div span {
+	color: #fff; font-size: 16px; font-weight: bolder;
+}
+.textoAtividadeDeAprendizagemPDF_02 {
+    height: 75px; padding: 30px 0 0 18px; width: 285px;
+}
+.textoTituloAtividadeDeAprendizagemPDF_02 {
+	font-weight: bolder;
+}
+/* FIM CAIXA ATIVIDADE DE APRENDIZADO PDF 01 */
+
+
+
+
+
+
+/* Atividade Realizada*/
+.atividadeRealizadaVIDEO {
+	width: 355px; height:30px; background: url('../img/icones/barraAtividadeRealizada.png') #069b8e;
+}
+.atividadeRealizadaVIDEO div {
+	width: 170px; height:30px; margin: 0 auto;
+}
+.atividadeRealizadaVIDEO div div {
+	margin: 4px 0px 0px 0px; background: url('../img/icones/icon.png') -121px -623px; width: 20px; height:20px;
+}
+.atividadeRealizadaVIDEO div span {
+	padding: 5px; color: #FFF;
+}
+.bordarAtividadeRealizada {
+	border: 1px solid #069b8e;
+}
+/**/
+
+/* Atividade Pendente */
+.atividadePendenteVIDEO {
+	width: 355px; height:30px; background: #ffcd35; margin: 0px 0px 0px -55px;
+}
+.atividadePendenteVIDEO div {
+	width: 170px; height:30px; margin: 0 auto;
+}
+.atividadePendenteVIDEO div div {
+	margin: 4px 0px 0px 0px; background: url('../img/icones/icon.png') -89px -623px; width: 20px; height:20px;
+}
+.atividadePendenteVIDEO div span {
+	padding: 5px; color: #ed2024;
+}
+.bordarAtividadePendente {
+	border: 1px solid #ffcd35;
+}
+/**/
+
+.rodape {
+	width:100%; font-size: 14px; height: 35px; background: #ff0000; text-align: center; color: #FFF;
+}

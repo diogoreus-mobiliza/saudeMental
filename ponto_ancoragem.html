@@ -1,11 +1,13 @@
 <html>
 	<head>
-		<title>Saúde Mental</title>
+		<title>Saúde Mental - Ancoragem</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf8">
 		<meta name="author" content="Hyago Goularte">
-		<script type="text/javascript" src="js/jquery.1.10.2.min.js"></script>
 
-		<link type="text/css" rel="stylesheet" href="css/default.css"  />
+		<link type="text/css" rel="stylesheet" href="css/default.css" />
+		<link type="text/css" rel="stylesheet" href="css/ancoragem.css" />
+	
+		<script type="text/javascript" src="js/jquery.1.10.2.min.js"></script>
 
 		<!-- Responsive Slides -->
 		<link rel="stylesheet" href="css/responsiveslides/responsiveslides.css">
@@ -15,182 +17,25 @@
 		<!-- FIM Responsive Slides -->
 
 		<!-- VideoJS -->
-		<link type="text/css" rel="stylesheet" href="css/video-js.css"  />
+		<link type="text/css" rel="stylesheet" href="css/video-js.css" />
 		<script type="text/javascript" src="js/video.js" ></script>
 		<!-- FIM VideoJS -->
 
 	</head>
-	<style type="text/css">
-		@font-face {
-		  font-family: "CronosPro-Regular";
-		  src: url("http://localhost/projetos/TimelineJS/css/font/");
-		  src: local("CronosPro-Regular"), url("http://localhost/projetos/TimelineJS/css/font/");
-		}
-		@font-face {
-		  font-family: "CronosPro-Bold";
-		  src: url("http://localhost/projetos/TimelineJS/css/font/");
-		  src: local("CronosPro-Bold"), url("http://localhost/projetos/TimelineJS/css/font/");
-		}
-
-		body{ font-family: CronosPro-Regular; margin: 0px; background: #fff; }
-		/* HELP */
-		.cf:before, 
-		.cf:after 	{ content:""; display: table; }
-		.cf:after 	{ clear:both; }
-		.cf 		{ zoom:1; }		/* For IE 6/7 (trigger hasLayout) */
-		.left 		{ float: left; }
-		.right 		{ float: right; }
-		.hide 		{ display: none; }
-		.block 		{ display: block; }
-		.bolder 	{ font-weight: bolder; }
-		/* FIM HELP */
-		#principal {
-			 margin: 0 auto; min-height: 400px; width: 640px; background: url("img/icones/background_ancoragem.png") #e3e6ec;/* border: 1px solid black; */
-		}
-		#conteudo {
-			margin: 0px auto; width: 640px; min-height: 400px; /* border: 1px solid black; */ ;
-		}
-		#topo {
-			margin: 0px; height: 140px; width: 100%; position: relative; z-index: 5;
-		}
-		#topo div {
-		    background: url("img/icones/cabecalho_ancoragem.png") no-repeat scroll 0 0 transparent;
-		    height: 110px;
-		    margin: 0 0 0 -6px;
-		    padding: 30px;
-		}
-		#topo h1 {
-			padding: 0px; margin: 0px 0px 0px 10px; color: white; font-weight: bolder;
-		}
-		#topo h3 {
-			padding: 0px; color: #cbf6f3; margin: 5px 0px 0px 15px; 
-		}
-		#corpo {
-			/*width: 620px;*/ min-height: 400px; padding: 0;
-		}
-		.texto {
-			width: 600px; min-height: 10px; padding: 20px;
-		}
-		.img {
-			padding: 10px;
-		}
-
-		/* BANNER */
-		#banner {
-			width: 750px; margin: 0px 0px 0px -55px; position: relative; height: 180px;
-		}
-		.banner {
-			/*width: 600px;*/ height: 180px;  text-align: left;
-		}
-		.banner .titulo {
-			width: 220px; height: 45px;
-		}
-		.banner .titulo h1 {
-			margin: 0px 10px 0px  15px; padding: 0px 0px 0px  0px; font-size: 40px; color: #ff6c00;
-		}
-		.banner .conteudo {
-			font-size: 16px; color: #ffa200; margin: 0px 10px 0px 15px; padding: 0px 0px 0px 0px; font-weight: bold; height: 100px;
-		}
-		.banner .conteudo span {
-			height: 90px;
-		}
-		.saberMais {
-			width: 140px; height: 35px; background: #0e7bc0; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px; cursor: pointer;
-		}
-		
-		.setaSaberMais_Banner {
-			margin: 10px; float: left; background: url("img/icones/icon.png") -28px -625px; width: 10; height: 13px;
-		}
-		.textoSaberMais_Banner {
-			font-size: 11px; margin-top: 10px; color: white; float: left; 
-		}
-
-		.setaImportante_Banner {
-			width: 460px; height:180px;  position: absolute; background: url(img/icones/setaImportante_Banner.png) no-repeat;
-		}
-		/* FIM BANNER */
-
-		/* CAIXA TEXTO BANNER */	 
-		.caixaTextoBanner {
-			width: 620px; background: #0e7bc0; padding: 10px; display: none;   /* margin: -20px 0 0 -20px; */
-		}
-		.caixaTextoBanner h2 {
-			padding: 0px 0px 10px 0px; margin: 0px; color: #fff; height: 30px; width: 100%;
-		}
-		.caixaTextoBanner span {
-			padding: 0px; margin: 0px; font-size: 12px; color: #fff;
-		}
-
-		.rslides {
-			position: relative;
-		}
-		/* FIM CAIXA TEXTO BANNER */
-
-		/* CAIXA ATIVIDADE DE APRENDIZADO VIDEO */
-		.atividadeDeAprendizagemVIDEO {
-			position: relative; background: #fdf9ea; width: 750px; height:110px; left: -55px;
-		}
-		.setaAtividadeDeAprendizagemVIDEO {
-			width: 157px; height:59px; margin: -29px; position: absolute; background: url('img/icones/setaAtividadeDeAprendizagemDireita.png');
-		}
-		.setaAtividadeDeAprendizagemVIDEO div {
-			padding: 12px 0px 0px 30px;
-		}
-		.setaAtividadeDeAprendizagemVIDEO div span {
-			color: #fff;
-			font-size: 16px; 
-			font-weight: bolder;
-		}
-		.videoAtividadeDeAprendizagemVIDEO {
-			position: absolute; width: 390px; height:220px; top: -45; right: 0px; padding: 5px; background: #FFF;
-		}
-		.iconeAtividadeDeAprendizagemVIDEO {
-			background: url('img/icones/compAtividadeDeAprendizagem.png'); width: 39px; height: 39px; margin: 40px 0px 0px 15px;
-		}
-		.textoAtividadeDeAprendizagemVIDEO {
-			padding: 35px 10px 0px 10px; width: 285px; height: 70px;
-		}
-		.textoTituloAtividadeDeAprendizagemVIDEO {
-			font-weight: bolder;
-		}
-		/**/
-		/**/	
-		.atividadeDeAprendizagemPDF {
-			position: relative; background: #fdf9ea; width: 400px; height:110px; margin: 0px auto;
-		}
-		.atividadeDeAprendizagemIconePDF {
-			background: url('img/icones/icon2.png') -25px -13px; width: 163px; height:160px; position:absolute; left: -68; top: -25px
-		}
-		.setaAtividadeDeAprendizagemPDF {
-			width: 157px; height:59px; position: absolute; top: -30px; right: -75px; background: url('img/icones/setaAtividadeDeAprendizagemEsquerda.png');
-		}
-		.setaAtividadeDeAprendizagemPDF div {
-			padding: 12px 0px 0px 30px;
-		}
-		.setaAtividadeDeAprendizagemPDF div span {
-			color: #fff;
-			font-size: 16px; 
-			font-weight: bolder;
-		}
-		.textoAtividadeDeAprendizagemPDF {
-		    height: 75px; padding: 30px 0 0 101px; width: 285px;
-		}
-		.textoTituloAtividadeDeAprendizagemPDF {
-			font-weight: bolder;
-		}
-
-		/**/
-	</style>
 	
 	<body>
 		<div id="principal">
-			<div id="conteudo">
+			<header>
 				<div id="topo">
 					<div>
 						<h1>Unidade 1 - Uso de drogas na sociedade</h1>
 						<h3>Módulo 1 - Drogas e sociedade</h3>
 					</div>
 				</div>
+			</header>
+			<section>
+				
+			</section>
 				<div id="corpo">
 					<!-- COMEÇO BANNER -->
 					<div id="banner">
@@ -199,14 +44,14 @@
 							<li>
 								<div class="banner">
 									<div class="left" > 
-										<div class="setaImportanteBanner"></div>
-										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
+										<div class="setaImportante_Banner"></div>
+										<img src="img/banner1.png" width="460px" height="180px" alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
 									<div class="right" style="width: 290px; height:180px; background: white"> 
-										<div id="" class="titulo">
+										<div  class="titulo">
 											<h1>80%</h1>
 										</div>
-										<div id="" class="conteudo">
+										<div  class="conteudo">
 											<span>
 												Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo
 											</span>
@@ -226,14 +71,14 @@
 							<li>
 								<div class="banner">
 									<div class="left" > 
-										<div class="setaImportanteBanner"></div>
-										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
+										<div class="setaImportante_Banner"></div>
+										<img src="img/banner2.png" width="460px" height="180px"  alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
 									<div class="right" style="width: 290px; height:180px; background: white"> 
-										<div id="" class="titulo">
-											<h1>80%</h1>
+										<div  class="titulo">
+											<h1>70%</h1>
 										</div>
-										<div id="" class="conteudo">
+										<div  class="conteudo">
 											<span>
 												Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo
 											</span>
@@ -253,14 +98,14 @@
 							<li>
 								<div class="banner">
 									<div class="left" > 
-										<div class="setaImportanteBanner"></div>
-										<img src="img/banner.png" class="" width="460px" height="180px" id="" alt="Imagem banner" title="Titulo da imagem de banner" />
+										<div class="setaImportante_Banner"></div>
+										<img src="img/banner3.png" width="460px" height="180px"  alt="Imagem banner" title="Titulo da imagem de banner" />
 									</div>
 									<div class="right" style="width: 290px; height:180px; background: white"> 
-										<div id="" class="titulo">
-											<h1>80%</h1>
+										<div  class="titulo">
+											<h1>60%</h1>
 										</div>
-										<div id="" class="conteudo">
+										<div  class="conteudo">
 											<span>
 												Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo
 											</span>
@@ -309,86 +154,185 @@
 						</span>
 					</div>
 					
-					<div class="cf" style="width: 600px; height: 40px;"></div>
 					
-					<!-- Atividade de Aprendizagem TIPO VIDEO-->	
-					<div class="atividadeDeAprendizagemVIDEO">
-						<div class="setaAtividadeDeAprendizagemVIDEO">
-							<div>
-								<span>Atividade de Aprendizagem</span>
+					<!-- Atividade de Aprendizagem TIPO VIDEO 1-->	
+					<div class="corpoAtividadeDeAprendizagemTipoVIDEO">
+						<div id="atividadeDeAprendizagemVIDEO_01" class="atividadeDeAprendizagemVIDEO1">
+							<div class="setaAtividadeDeAprendizagemVIDEO1">
+								<div>
+									<span>Atividade de Aprendizagem</span>
+								</div>
+							</div>
+							<div class="left iconeAtividadeDeAprendizagemVIDEO1"></div>
+
+							<div class="textoAtividadeDeAprendizagemVIDEO1 left">
+								<span class="bolder">Aprensetação de video:</span>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
+							</div>
+							<div class="videoAtividadeDeAprendizagemVIDEO1" id="clickVideo01">
+								<video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+							   	  data-setup="{}">
+							  		<source src="video/video.mp4" type='video/mp4' />
+							  </video>
 							</div>
 						</div>
-						<div class="left iconeAtividadeDeAprendizagemVIDEO"></div>
-
-						<div class="textoAtividadeDeAprendizagemVIDEO left">
-							<span class="bolder">Aprensetação de video:</span>
-							Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
+						<!-- /**/ -->
+						<div id="atividadeRealizadaVIDEO_01" class="atividadeRealizadaVIDEO left hide" style="margin-left: -55px; ">
+							<div>
+								<div class="left"></div>
+								<span class="bolder left">
+									Atividade Realizada!
+								</span>
+							</div>
 						</div>
-						<div class="videoAtividadeDeAprendizagemVIDEO">
-							<video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
-						      	   data-setup="{}">
-						   		<source src="video/video.mp4" type='video/mp4' />
-						    </video>
+						<div id="atividadePendenteVIDEO_01" class="atividadePendenteVIDEO left hide" style="margin-left: -55px;">
+							<div>
+								<div class="left"></div>
+								<span class="bolder left">
+									Atividade Pendente!
+								</span>
+							</div>
 						</div>
+						<!-- /**/ -->
 					</div>
-					<!-- FIM Atividade de Aprendizagem -->	
-					<div class="cf" style="width: 600px; height: 75px;"></div>
+					<!-- FIM Atividade de Aprendizagem TIPO VIDEO 1-->	
+
+
 					<div class="texto">
 						<span>
 							<p>
 								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
 							</p>
-							<br />
-							<p>
-								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
-							</p>
-							<br />
-							<p>
-								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
-							</p>
-							<br />
-							<p>
-								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
-							</p>
-							<br />
-
 						</span>
 					</div>
-					
-				
-					
-					<div class="atividadeDeAprendizagemPDF" style="">
-						<div class="atividadeDeAprendizagemIconePDF" style=""></div>
-						<div class="textoAtividadeDeAprendizagemPDF">
-							<span class="bolder">Apresentação em powerpoint:</span>
-							Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
+
+
+					<!-- Atividade de Aprendizagem TIPO VIDEO 2-->
+					<div class="corpoAtividadeDeAprendizagemTipoVIDEO">
+						<div id="atividadeDeAprendizagemVIDEO_02" class="atividadeDeAprendizagemVIDEO2">
+							<div class="setaAtividadeDeAprendizagemVIDEO2">
+								<div>
+									<span>Atividade de Aprendizagem</span>
+								</div>
+							</div>
+							<div class="right iconeAtividadeDeAprendizagemVIDEO2"></div>
+
+							<div class="textoAtividadeDeAprendizagemVIDEO2 right">
+								<span class="bolder">Aprensetação de video:</span>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
+							</div>
+							<div class="videoAtividadeDeAprendizagemVIDEO2" id="clickVideo02">
+								<video id="video2" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+							   	  data-setup="{}">
+							  		<source src="video/video.mp4" type='video/mp4' />
+							  </video>
+							</div>
+
 						</div>
-						<div class="setaAtividadeDeAprendizagemPDF">
+						<!-- /**/ -->
+						<div id="atividadeRealizadaVIDEO_02" class="atividadeRealizadaVIDEO right hide" style="margin-right: -57px; ">
 							<div>
-								<span>
-									Atividade de Aprendizagem
+								<div class="left"></div>
+								<span class="bolder left">
+									Atividade Realizada!
 								</span>
 							</div>
 						</div>
+						<div id="atividadePendenteVIDEO_02" class="atividadePendenteVIDEO right hide" style="margin-right: -57px;">
+							<div>
+								<div class="left"></div>
+								<span class="bolder left">
+									Atividade Pendente!
+								</span>
+							</div>
+						</div>
+						<!-- /**/ -->
+					</div>	
+					<!-- FIM Atividade de Aprendizagem TIPO VIDEO 02-->	
+
+
+					<div class="texto">
+						<span>
+							<p>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
+							</p>
+						</span>
 					</div>
+
 					
-				<div style="width: 600px; height:530px;"></div>
+					<!-- INICIO Atividade de Aprendizagem tipo PDF 01 -->
+					<div class="corpoAtividadeDeAprendizagemTipoPDF">
+						<div class="atividadeDeAprendizagemPDF_01" style="">
+							<div class="atividadeDeAprendizagemIconePDF_01" style=""></div>
+							<div class="textoAtividadeDeAprendizagemPDF_01">
+								<span class="bolder">Apresentação em powerpoint:</span>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
+							</div>
+							<div class="setaAtividadeDeAprendizagemPDF_01">
+								<div>
+									<span>
+										Atividade de Aprendizagem
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- FIM Atividade de Aprendizagem tipo PDF 01 -->
+
+	
+					<div class="texto">
+						<span>
+							<p>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
+							</p>
+						</span>
+					</div>
+
+
+					<!-- INICIO Atividade de Aprendizagem tipo PDF 02 -->
+					<div class="corpoAtividadeDeAprendizagemTipoPDF">
+						<div class="atividadeDeAprendizagemPDF_02" style="">
+							<div class="atividadeDeAprendizagemIconePDF_02 right" style=""></div>
+							<div class="textoAtividadeDeAprendizagemPDF_02">
+								<span class="bolder">Apresentação em powerpoint:</span>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
+							</div>
+							<div class="setaAtividadeDeAprendizagemPDF_02">
+								<div>
+									<span>
+										Atividade de Aprendizagem
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- FIM Atividade de Aprendizagem tipo PDF 01 -->
+
+					
+					<div class="texto">
+						<span>
+							<p>
+								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo. estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec mi arcu. Curabitur in dolor is.Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo.
+							</p>
+						</span>
+					</div>
 
 
 
-
-
-
-					<div class="cf"></div>
+					<div style="width: 600px; height:530px;"></div>
 				</div>
-				<div class="cf"></div>
-			</div>
-			<div class="cf"></div>
+			</section>
+			<footer>
+				<div class="rodape bolder">
+						Você ainda não completou o mínimo de <span style="font-size: 28px;">75%</span> das atividades. 
+						<a href="#">CLIQUE AQUI PARA FECHAR A JANELA</a>
+				</div>
+			</footer>
 		</div>
 		<script type="text/javascript">
 
 		$(document).ready(function(){
-
+			/* BANNER */
 			$("#saberMais_banner1").click(function () {
 				if ($("#caixaTextoBanner1").is(":hidden")) {
 					$("#caixaTextoBanner1").slideDown();
@@ -416,6 +360,27 @@
 					$(".setaSaberMais_Banner").css('background-position', '-28px -625px');
 				}
 			});
+			/* FIM BANNER */
+
+
+			/* ATIVIDADE */
+			$("#clickVideo01").click(function() {
+				$("#atividadeDeAprendizagemVIDEO_01").addClass("bordarAtividadeRealizada");
+				$("#atividadeRealizadaVIDEO_01").removeClass("hide")
+				$("#atividadeRealizadaVIDEO_01").addClass("block")
+			});
+
+			$("#clickVideo02").click(function() {
+				/*$("#atividadeDeAprendizagemVIDEO_02").addClass("bordarAtividadeRealizada");
+				$("#atividadeRealizadaVIDEO_02").removeClass("hide");
+				$("#atividadeRealizadaVIDEO_02").addClass("block");*/
+				$("#atividadeDeAprendizagemVIDEO_02").addClass("bordarAtividadePendente");
+				$("#atividadePendenteVIDEO_02").removeClass("hide");
+				$("#atividadePendenteVIDEO_02").addClass("block");
+			});
+
+
+			/* FIM ATIVIDADE */
 
 
 			$(function() {
@@ -430,26 +395,6 @@
 				});
 			});
 
-			$("#imgDocAtividade1").mouseover(function(){
-				$("#imgDocAtividade1").attr("src","img/icones/papelMouseOver.png");
-			});
-			$("#imgDocAtividade1").mouseout(function(){
-				$("#imgDocAtividade1").attr("src","img/icones/papelNaoSelecionado.png");
-			});
-
-			/*
-			0 - Não vista
-			1 - incompleta
-			2 - Completa
-			*/
-			var statusAtividade1 = 0
-			$("#imgDocAtividade1").click(function(){
-				if(statusAtividade1 == 0){
-
-				}
-				$("#atividade1Pendente").slideDown();
-				$("#atividade1").addClass("bordaAtividadePendente")
-			});
 		});
 
 		</script>	
