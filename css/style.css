@@ -12,49 +12,45 @@
 
 div.wrapper 											{margin: 0 auto; height:576px; width:769px; background-color: rgb(227,230,236); position:relative;}
 
-.campoVideo 											{position:absolute; top:45px; left:365px; height:217px; width:389px; z-index:9999; border: solid rgb(255,255,255)}
+.campoVideo 											{position:absolute; top:45px; left:410px; height:198px; width:333px; z-index:9999; border: solid rgb(255,255,255)}
 
-.lateral 												{position:absolute; top:229px; left:656px; height:347px; width:113px; background: url(../img/icones/lateral.jpg) no-repeat;}
+.lateral 												{position:absolute; height:576px; width:769px; background: url(../img/icones/topo_lateral.png) no-repeat;}
 /*----------------------------------------Top----------------------------------------*/
 
 div.top													{}
 
-.cabecalho 												{height:229px; background: url(../img/icones/cabecalho.jpg) no-repeat}
+.cabecalho 												{position:relative; height:190px;}
 
 .txtCabecalho 											{color: rgb(255,255,255); font: 19px CronosPro-Bold, Serif; margin:0px; padding:7px 0px 0px 27px; float:left;}
 
 .ufsc 		 											{color: rgb(188,249,208); font: 20px CronosPro-Bold, Serif; margin:8px 26px; float:right;}  
 													
-.tituloTop  											{color: rgb(255,255,255); font: 30px CronosPro-Bold, Serif; line-height:100%; margin:2% 2% 0% 2%; padding:10px 0px 0px 10px; clear:both;}
+.tituloTop  											{color: rgb(255,255,255); font: 30px CronosPro-Bold, Serif; line-height:100%; margin-left:1%; padding:20px 0px 0px 0px; clear:both; text-align: center; width:400px;}
 	
 
 /*--------------------------------------Middle--------------------------------------*/
 
-div.middle												{height:234px; position:relative;}
+div.middle												{height:275px; position:relative;}
 
-.quebraLinha 											{float:right; width:403px; height:45px;}
+.silhoueta 												{background: url(../img/icones/silhouetas.png); height:71px; width:200px; position:absolute; top:87px; left:415px;}
 
-.descricaoModulo 										{padding:15px 15px; width:626px;}
+.descricaoModulo 										{padding:25px 20px; width:380px;}
 
 .descricaoModulo p										{font-size:16px; font-family:CronosPro-Regular, Serif; color: rgb(113,119,104); text-decoration:none;}
 
-.menuUnidade 											{height:138px; width:770px; background: url(../img/icones/fundoMenu.jpg) repeat-x; position:absolute; top:96px;}
+.menuUnidade 											{height:125px; width:769px; background: url(../img/icones/fundoMenu.jpg) repeat-x; position:absolute; top:150px;}
 
-.setaVerde 												{height:138px; width:103px; background: url(../img/icones/setaVerde.png) no-repeat; float:left;}
+.descricaoContainer 									{height:125px; width:769px;}
 
-.setaVerde p 											{color: rgb(255,255,255); font: italic 18px CronosPro-Bold, Serif; margin:0px; padding:40px 8px 0px 0px; text-align:center; line-height:18px;}
+.colDescricao li										{display:inline-block; height:125px; width:195px; position:relative; margin-left:5px; margin-right:5px;}
 
-.descricaoContainer 									{float:right; height:138px; width:667px;}
+.descricao a 											{display:table; vertical-align: top; height:100px; width:115px; font: 12px CronosPro-Bold, Serif; color: rgb(255, 255, 255); margin:25px 0px 0px 80px; text-decoration:none}			
 
-.colDescricao li										{display:inline-block; height:138px; width:180px; position:relative; margin-left:27px;}
+.unidadeIcon 											{position: absolute; height:86px; width:62px; background:url(../img/icones/icon.png) -119px -626px; top:18px; left:5px;}
 
-.descricao a 											{display:table; vertical-align: top; height:100px; width:165px; font: 12px CronosPro-Bold, Serif; color: rgb(59, 178, 139); margin:20px 0px 0px 40px; text-decoration:none}			
+.unidadeIcon2											{position: absolute; height:86px; width:62px; background:url(../img/icones/icon.png) -119px -626px; top:18px; left:5px;}
 
-.unidadeIcon 											{position: absolute; height:35px; width:33px; background:url(../img/icones/icon.png) -10px -8px; top:18px; left:5px;}
-
-.unidadeIcon2											{position: absolute; height:35px; width:33px; background:url(../img/icones/icon.png) -10px -8px; top:18px; left:5px;}
-
-.unidadeIcon3 											{position: absolute; height:35px; width:33px; background:url(../img/icones/icon.png) -10px -8px; top:18px; left:5px;}
+.unidadeIcon3 											{position: absolute; height:86px; width:62px; background:url(../img/icones/icon.png) -119px -626px; top:18px; left:5px;}
 
 .unidadeCheck:after 									{content: ''; display: block; width: 35px; height: 33px; background:url(../img/icones/icon.png) -96px -8px;}
 
@@ -64,7 +60,7 @@ div.middle												{height:234px; position:relative;}
 
 div.bottom												{height: 113px; position:relative;}
 
-.iconBottom 											{padding:18px 63px; float:left;}
+.iconBottom 											{padding:14px 45px; float:left;}
 
 .iconBottom li											{display:inline-block; margin-left:9px; z-index:9999;}
 
@@ -84,7 +80,7 @@ div.bottom												{height: 113px; position:relative;}
 
 .forumIcon 												{height:60px; width:75px; background: url(../img/icones/icon.png) -4px -542px no-repeat; }	
 
-.forum 													{display:block; height:77px; width:77px; float:right; padding:22px 17px; text-decoration:none;}					
+.forum 													{display:block; height:67px; width:77px; float:right; padding:29px 17px; text-decoration:none;}					
 
 .fontIcon 												{font: 16px CronosPro-Regular, Serif; color: rgb(113,119,104); display:block; padding-top:5px;}
 

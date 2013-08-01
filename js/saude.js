@@ -12,7 +12,7 @@ $(document).ready(function(){
 			$(unidadeIcon).css('background', 'url(img/icones/icon.png) -53px -8px');
 		},
 		mouseleave:function(e){
-			$(unidadeIcon).css('background-position', '-10px -8px');
+			$(unidadeIcon).css('background-position', '-119px -626px');
 		},
 		click:function(){
 			$(unidadeIcon).addClass('unidadeCheck');
@@ -24,7 +24,7 @@ $(document).ready(function(){
 			$(unidadeIcon2).css('background', 'url(img/icones/icon.png) -53px -8px');
 		},
 		mouseleave:function(e){
-			$(unidadeIcon2).css('background-position', '-10px -8px');
+			$(unidadeIcon2).css('background-position', '-119px -626px');
 		},
 		click:function(){
 			$(unidadeIcon2).addClass('unidadeCheck');
@@ -36,7 +36,7 @@ $(document).ready(function(){
 			$(unidadeIcon3).css('background', 'url(img/icones/icon.png) -53px -8px');
 		},
 		mouseleave:function(e){
-			$(unidadeIcon3).css('background-position', '-10px -8px');
+			$(unidadeIcon3).css('background-position', '-119px -626px');
 		},
 		click:function(){
 			$(unidadeIcon3).addClass('unidadeCheck');
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 	$(".cafeIcon").on({
 		mouseenter:function(e){
-			$(this).css('background', 'url(img/icones/icon.png) -93px -142px');
+			$(this).css('background', 'url(img/icones/icon.png) -92px -142px');
 		},
 		mouseleave:function(e){
 			$(this).css('background-position', '-4px -142px');
