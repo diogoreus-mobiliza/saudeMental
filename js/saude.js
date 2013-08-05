@@ -7,37 +7,30 @@ $(document).ready(function(){
 
 
 //-------------------------------------HOVER--------------------------------------------------
-	$(".descricao1").on({
+	
+	$(".colDescricao > li").on({
 		mouseenter:function(e){
-			$(unidadeIcon).css('background', 'url(img/icones/icon.png) -53px -8px');
+			$(this).css('background', 'url(img/icones/unidadeHover.png) 4px 5px no-repeat');
+			console.log("testando hover");
 		},
 		mouseleave:function(e){
-			$(unidadeIcon).css('background-position', '-119px -626px');
-		},
+			$(this).css('background', 'url(img/icones/fundoMenu.jpg)');
+		}
+	});
+
+	$(".descricao1").on({
 		click:function(){
 			$(unidadeIcon).addClass('unidadeCheck');
 		}
 	});
 
 	$(".descricao2").on({
-		mouseenter:function(e){
-			$(unidadeIcon2).css('background', 'url(img/icones/icon.png) -53px -8px');
-		},
-		mouseleave:function(e){
-			$(unidadeIcon2).css('background-position', '-119px -626px');
-		},
 		click:function(){
 			$(unidadeIcon2).addClass('unidadeCheck');
 		}
 	});
 
 	$(".descricao3").on({
-		mouseenter:function(e){
-			$(unidadeIcon3).css('background', 'url(img/icones/icon.png) -53px -8px');
-		},
-		mouseleave:function(e){
-			$(unidadeIcon3).css('background-position', '-119px -626px');
-		},
 		click:function(){
 			$(unidadeIcon3).addClass('unidadeCheck');
 		}
@@ -105,5 +98,5 @@ $(document).ready(function(){
 			$(this).css('background-position', '-4px -542px');
 		}
 	});
-});
 
+});
