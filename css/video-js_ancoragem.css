@@ -498,7 +498,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
     cursor: pointer;
     display: block;
     height: 5em;
-    left: 14em;
+    left: 16em;
     margin: 0;
     opacity: 1;
     position: absolute;
@@ -533,7 +533,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
     font-family: VideoJS;
     font-size: 3em;
     height: 100%;
-    left: 5px;
+    left: 3px;
     line-height: 1.7;
     position: absolute;
     text-align: center;

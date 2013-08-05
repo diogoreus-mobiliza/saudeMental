@@ -40,10 +40,10 @@ FIM HELP
     padding: 30px;
 }
 #topo h1 {
-	padding: 0px; margin: 0px 0px 0px 10px; color: white; font-weight: bolder;
+	padding: 0px; margin: 0px 0px 0px 10px; color: white; font-weight: bolder; font-size: 30px;
 }
 #topo h3 {
-	padding: 0px; color: #cbf6f3; margin: 5px 0px 0px 15px; 
+	padding: 0px; color: #cbf6f3; margin: 5px 0px 0px 15px; font-size: 20px;
 }
 #corpo {
 	/*width: 620px;*/ min-height: 400px; padding: 0;
@@ -80,7 +80,7 @@ FIM HELP
 	width: 140px; height: 35px; background: #0e7bc0; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px; cursor: pointer;
 }
 .setaSaberMais_Banner {
-	margin: 10px; float: left; background: url("../img/icones/icon.png") -28px -625px; width: 10; height: 13px;
+	margin: 10px; float: left; background: url("../img/icones/icon3.png") -41px -40px; width: 10; height: 13px;
 }
 .textoSaberMais_Banner {
 	font-size: 11px; margin-top: 10px; color: white; float: left; 
@@ -127,7 +127,7 @@ FIM HELP
 	position: relative; background: #fdf9ea; width: 750px; height:110px; left: -55px;
 }
 .barraAtividadeDeAprendizagemVIDEO1 {
-	width: 380px; height:39px; margin: -20px; position: relative;  background: url('../img/icones/barraTopoAtividadeDeAprendizagemDireita.png') no-repeat;
+	width: 380px; height:39px; margin: -22px; position: relative;  background: url('../img/icones/barraTopoAtividadeDeAprendizagemDireita.png') no-repeat;
 }
 .barraAtividadeDeAprendizagemVIDEO1 div {
 	padding: 5px 0px 0px 0px; width: 370px; text-align: center;
@@ -154,7 +154,7 @@ FIM HELP
 	position: relative; background: #fdf9ea; width: 750px; height:110px; left: -55px;
 }
 .barraAtividadeDeAprendizagemVIDEO2  {
-	width: 100%; height:39px; margin-right: -22px; right: 0px; position: absolute; background: url('../img/icones/barraTopoAtividadeDeAprendizagemEsquerda.png') no-repeat;
+	width: 100%; height:39px; margin-right: -22px; right: 0px; top:-1px; position: absolute; background: url('../img/icones/barraTopoAtividadeDeAprendizagemEsquerda.png') no-repeat;
 }
 .barraAtividadeDeAprendizagemVIDEO2  div {
 	padding: 5px 0px 0px 0px; width: 388px; text-align: center;
@@ -183,7 +183,7 @@ FIM HELP
 	width: 422px; height: 135px; background: #FDF9EA; margin: 0px auto;
 }
 .topoAtividadeDeAprendizagemPDF {
-	color: #fff; margin-left: -24px; padding: 5px 0px 0px 0px;  background: url('../img/icones/barraCompletaAtividadeDeAprendizagem.png') no-repeat; width: 472px; height: 37px; text-align: center;
+	color: #fff; margin-left: -24px; margin-top: -1px; padding: 5px 0px 0px 0px;  background: url('../img/icones/barraCompletaAtividadeDeAprendizagem.png') no-repeat; width: 472px; height: 37px; text-align: center;
 }
 /*.atividadeDeAprendizagemPDF div span {
 	color: #fff; font-size: 16px; font-weight: bolder;
@@ -192,19 +192,22 @@ FIM HELP
 	margin-left: 30px; background: url('../img/icones/iconePDF2.png') no-repeat; width: 110px; height: 110px;
 }
 .textoAtividadeDeAprendizagemPDF {
-	width: 260px; height: 81px; margin-left: 10px; 
+	width: 260px; height: 70px; margin-left: 10px; 
 }
 .textoAtividadeDeAprendizagemPDF span {
 	color: black;	
 }
+.linkAtividadeDeAprendizagemPDF {
+	width: 260px; text-align: center;
+}
 
 /* Atividade Realizada*/
-.atividadeRealizadaVIDEO 			{ width: 355px; height:30px; background: url('../img/icones/barraAtividadeRealizada.png') #069b8e; }
+.atividadeRealizadaVIDEO 			{ width: 355px; height:30px; background: url('../img/icones/barraAtividadeRealizada.png') #0EC012; }
 .atividadeRealizadaVIDEO div 		{ width: 170px; height:30px; margin: 0 auto; }
 .atividadeRealizadaVIDEO div div 	{ margin: 4px 0px 0px 0px; background: url('../img/icones/icon3.png') -36px -7px; width: 20px; height:20px; }
 .atividadeRealizadaVIDEO div span 	{ padding: 5px; color: #FFF; }
 
-.atividadeRealizadaPDF 				{ width: 423px; height:30px; background: url('../img/icones/barraAtividadeRealizada.png') #069b8e; }
+.atividadeRealizadaPDF 				{ width: 423px; height:30px; margin-left: 1px; background: url('../img/icones/barraAtividadeRealizada.png') #0EC012; }
 .atividadeRealizadaPDF div 			{ width: 280px; height:30px; margin: 0 auto; }
 .atividadeRealizadaPDF div div 		{ margin: 3px 0px 0px 40px; background: url('../img/icones/icon3.png') -36px -7px; width: 20px; height:20px; }
 .atividadeRealizadaPDF div span 	{ padding: 5px; color: #FFF; }
@@ -213,10 +216,16 @@ FIM HELP
 /**/
 
 /* Atividade Pendente */
-.atividadePendenteVIDEO 		 	{ width: 355px; height:30px; background: #ffcd35; margin: 0px 0px 0px -55px; }
+.atividadePendenteVIDEO 		 	{ width: 355px; height:30px; margin-left: 1px; background: #ffcd35; margin: 0px 0px 0px -55px; }
 .atividadePendenteVIDEO div 	 	{ width: 170px; height:30px; margin: 0 auto; }
 .atividadePendenteVIDEO div div  	{ margin: 4px 0px 0px 0px; background: url('../img/icones/icon3.png') -10px -8px; width: 20px; height:20px; }
 .atividadePendenteVIDEO div span 	{ padding: 5px; color: #ed2024; }
+
+.atividadePendentePDF 				{ width: 423px; height:30px; background: #ffcd35; }
+.atividadePendentePDF div 			{ width: 280px; height:30px; margin: 0 auto; }
+.atividadePendentePDF div div 		{ margin: 3px 0px 0px 40px; background: url('../img/icones/icon3.png') -10px -8px; width: 20px; height:20px; }
+.atividadePendentePDF div span 		{ padding: 5px; color: #ed2024; }
+
 .bordarAtividadePendente 		 	{ border: 1px solid #ffcd35; }
 /**/
 

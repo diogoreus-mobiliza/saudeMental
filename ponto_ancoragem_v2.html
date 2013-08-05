@@ -171,9 +171,8 @@
 								<span class="bolder">Aprensetação de video:</span>
 								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
 							</div>
-							<div class="videoAtividadeDeAprendizagemVIDEO1 right" id="clickVideo01">
-								<video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
-							   	  data-setup="{}">
+							<div class="videoAtividadeDeAprendizagemVIDEO1 right" id="atividade01">
+								<video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220" data-setup="{}">
 							  		<source src="video/video.mp4" type='video/mp4' />
 							  </video>
 							</div>
@@ -182,17 +181,13 @@
 						<div id="atividadeRealizadaVIDEO_01" class="atividadeRealizadaVIDEO left hide" style="margin-left: -55px; ">
 							<div>
 								<div class="left"></div>
-								<span class="bolder left">
-									Atividade Realizada!
-								</span>
+								<span class="bolder left">Atividade Realizada!</span>
 							</div>
 						</div>
-						<div id="atividadePendenteVIDEO_01" class="atividadePendenteVIDEO left" style="margin-left: -55px;">
+						<div id="atividadePendenteVIDEO_01" class="atividadePendenteVIDEO left hide" style="margin-left: -55px;">
 							<div>
 								<div class="left"></div>
-								<span class="bolder left">
-									Atividade Pendente!
-								</span>
+								<span class="bolder left">Atividade Pendente!</span>
 							</div>
 						</div>
 						<!-- /**/ -->
@@ -223,29 +218,24 @@
 								<span class="bolder">Aprensetação de video:</span>
 								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
 							</div>
-							<div class="videoAtividadeDeAprendizagemVIDEO2" id="clickVideo02">
-								<video id="video2" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
-							   	  data-setup="{}">
+							<div class="videoAtividadeDeAprendizagemVIDEO2" id="atividade02">
+								<video id="video2" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220" data-setup="{}">
 							  		<source src="video/video.mp4" type='video/mp4' />
 							  </video>
 							</div>
 
 						</div>
 						<!-- /**/ -->
-						<div id="atividadeRealizadaVIDEO_02" class="atividadeRealizadaVIDEO right hide" style="margin-right: -57px; ">
+						<div id="atividadeRealizadaVIDEO_02" class="atividadeRealizadaVIDEO left hide" style="margin-left: 342px; ">
 							<div>
 								<div class="left"></div>
-								<span class="bolder left">
-									Atividade Realizada!
-								</span>
+								<span class="bolder left">Atividade Realizada!</span>
 							</div>
 						</div>
-						<div id="atividadePendenteVIDEO_02" class="atividadePendenteVIDEO right hide" style="margin-right: -57px;">
+						<div id="atividadePendenteVIDEO_02" class="atividadePendenteVIDEO left hide" style="margin-left: 342px;">
 							<div>
 								<div class="left"></div>
-								<span class="bolder left">
-									Atividade Pendente!
-								</span>
+								<span class="bolder left">Atividade Pendente!</span>
 							</div>
 						</div>
 						<!-- /**/ -->
@@ -261,10 +251,9 @@
 						</span>
 					</div>
 
-
-
+					<!-- PDF -->
 					<div class="corpoAtividadeDeAprendizagemTipoPDF">
-						<div class="atividadeDeAprendizagemPDF">
+						<div id="atividadeDeAprendizagemPDF" class="atividadeDeAprendizagemPDF">
 							<div class="topoAtividadeDeAprendizagemPDF">
 								<span class="bolder"> Atividade de Aprendizagem</span>
 							</div>
@@ -273,18 +262,27 @@
 								<span class="bolder">Apresentação em powerpoint:</span>
 								Vivamus vehicula nulla nec elit cursus, nec pharetra diam placerat. Pellentesque sit amet rhoncus justo estibulum.
 							</div>
+							<div class="left linkAtividadeDeAprendizagemPDF">
+								<a href="#" id="atividade03">Clique aqui para visualizar.</a>
+							</div>
 
 						</div>
-						<div id="atividadeRealizadaPDF" class="atividadeRealizadaPDF">
-							<!-- <div class="right" style="width: 30px; height: 30px;"></div> -->
+						<!-- ## -->
+						<div id="atividadeRealizadaPDF" class="atividadeRealizadaPDF hide">
 							<div class="right">
 								<div class="left"></div>
-								<span class="bolder left">
-									Atividade Realizada!
-								</span>
+								<span class="bolder left">Atividade Realizada!</span>
 							</div>
 						</div>
+						<div id="atividadePendentePDF" class="atividadePendentePDF hide">
+							<div class="right">
+								<div class="left"></div>
+								<span class="bolder left">Atividade Realizada!</span>
+							</div>
+						</div>
+						<!-- ## -->
 					</div>
+					<!-- FIM PDF -->
 
 					<div class="texto">
 						<span>
@@ -313,47 +311,64 @@
 			$("#saberMais_banner1").click(function () {
 				if ($("#caixaTextoBanner1").is(":hidden")) {
 					$("#caixaTextoBanner1").slideDown();
-					$(".setaSaberMais_Banner").css('background-position', '-58px -625px');
+					$(".setaSaberMais_Banner").css('background-position', '-15px -41px');
 				} else {
 					$("#caixaTextoBanner1").slideUp();
-					$(".setaSaberMais_Banner").css('background-position', '-28px -625px');
+					$(".setaSaberMais_Banner").css('background-position', '-41px -40px');
 				}
 			});
 			$("#saberMais_banner2").click(function () {
 				if ($("#caixaTextoBanner2").is(":hidden")) {
 					$("#caixaTextoBanner2").slideDown();
-					$(".setaSaberMais_Banner").css('background-position', '-58px -625px');
+					$(".setaSaberMais_Banner").css('background-position', '-15px -41px');
 				} else {
 					$("#caixaTextoBanner2").slideUp();
-					$(".setaSaberMais_Banner").css('background-position', '-28px -625px');
+					$(".setaSaberMais_Banner").css('background-position', '-41px -40px');
 				}
 			});
 			$("#saberMais_banner3").click(function () {
 				if ($("#caixaTextoBanner3").is(":hidden")) {
 					$("#caixaTextoBanner3").slideDown();
-					$(".setaSaberMais_Banner").css('background-position', '-58px -625px');
+					$(".setaSaberMais_Banner").css('background-position', '-15px -41px');
 				} else {
 					$("#caixaTextoBanner3").slideUp();
-					$(".setaSaberMais_Banner").css('background-position', '-28px -625px');
+					$(".setaSaberMais_Banner").css('background-position', '-41px -40px');
 				}
 			});
 			/* FIM BANNER */
 
 
 			/* ATIVIDADE */
-			$("#clickVideo01").click(function() {
+			$("#atividade01").click(function() {
 				$("#atividadeDeAprendizagemVIDEO_01").addClass("bordarAtividadeRealizada");
-				$("#atividadeRealizadaVIDEO_01").removeClass("hide")
-				$("#atividadeRealizadaVIDEO_01").addClass("block")
+				$("#atividadeRealizadaVIDEO_01").removeClass("hide");
+				$("#atividadeRealizadaVIDEO_01").addClass("block");
+				/*
+				$("#atividadeDeAprendizagemVIDEO_01").addClass("bordarAtividadePendente");
+				$("#atividadePendenteVIDEO_01").removeClass("hide");
+				$("#atividadePendenteVIDEO_01").addClass("block");
+				*/
 			});
 
-			$("#clickVideo02").click(function() {
-				/*$("#atividadeDeAprendizagemVIDEO_02").addClass("bordarAtividadeRealizada");
+			$("#atividade02").click(function() {
+				$("#atividadeDeAprendizagemVIDEO_02").addClass("bordarAtividadeRealizada");
 				$("#atividadeRealizadaVIDEO_02").removeClass("hide");
-				$("#atividadeRealizadaVIDEO_02").addClass("block");*/
+				$("#atividadeRealizadaVIDEO_02").addClass("block");
+				/*
 				$("#atividadeDeAprendizagemVIDEO_02").addClass("bordarAtividadePendente");
 				$("#atividadePendenteVIDEO_02").removeClass("hide");
 				$("#atividadePendenteVIDEO_02").addClass("block");
+				*/
+			});
+			$("#atividade03").click(function() {
+				$("#atividadeDeAprendizagemPDF").addClass("bordarAtividadeRealizada");
+				$("#atividadeRealizadaPDF").removeClass("hide");
+				$("#atividadeRealizadaPDF").addClass("block");
+				/*
+				$("#atividadeDeAprendizagemPDF").addClass("bordarAtividadePendente");
+				$("#atividadePendentePDF").removeClass("hide");
+				$("#atividadePendentePDF").addClass("block");
+				*/
 			});
 
 

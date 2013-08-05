@@ -296,6 +296,7 @@
             // Get index of clicked tab
             var idx = $tabs.index(this);
             $(".caixaTextoBanner").slideUp();
+            $(".setaSaberMais_Banner").css('background-position', '-41px -40px');
             console.log(idx);
 
             // Break if element is already active or currently animated
@@ -386,6 +387,7 @@
               prevIdx = idx - 1,
               nextIdx = idx + 1 < length ? index + 1 : 0;
               $(".caixaTextoBanner").slideUp();
+              $(".setaSaberMais_Banner").css('background-position', '-41px -40px');
               console.log(idx);
 
             // Go to slide
