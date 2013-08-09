@@ -6,8 +6,6 @@
 	src: local("CronosPro-Bold"), url("https://unasus2.moodle.ufsc.br/pluginfile.php/16440/mod_folder/content/0/CronosPro-Bold.otf");
 	}
 
-
-
 /*--------------------------------------Wrapper--------------------------------------*/													
 
 div.wrapper 											{margin: 0 auto; height:576px; width:769px; background-color: rgb(227,230,236); position:relative;}

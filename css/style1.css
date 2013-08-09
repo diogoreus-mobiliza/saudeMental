@@ -1,0 +1,289 @@
+﻿body{}
+
+@font-face {
+	font-family: "CronosPro-Bold";
+	src: url("http://site/fontes/RegencyScriptFLF-Regular.eot"); /* para IE */
+	src: local("CronosPro-Bold"), url("https://unasus2.moodle.ufsc.br/pluginfile.php/16440/mod_folder/content/0/CronosPro-Bold.otf");
+	}
+										
+div.wrapper{
+margin: 0 auto;
+height:576px; 
+width:769px; 
+background-color: rgb(227,230,236); 
+position:relative;
+}
+
+.campoVideo{
+position:absolute; 
+top:45px; 
+left:410px; 
+height:198px; 
+width:333px; 
+z-index:9999; 
+border: solid rgb(255,255,255)
+}
+
+.topoLateral{
+position:absolute; 
+height:576px; 
+width:769px; 
+background: url(../img/icones/topo_lateral.png) no-repeat;
+}
+
+.divisoria{
+position:absolute; 
+top:5px; 
+left:16px;
+}
+
+.divisoria li{
+display:inline-block;
+ margin-left:203px; 
+ height:121px; 
+ width:18px; 
+ background: url(../img/icones/divisoria.png) no-repeat; 
+ z-index:9999; 
+ opacity: 0.8;
+}
+
+.estudoFaixa{
+position:absolute; 
+top:318px; 
+height:36px; 
+width:243px; 
+background: url(../img/icones/estudoFaixa.png) no-repeat; 
+z-index:9999;
+}
+
+
+div.top	{
+position:relative; 
+height:190px;
+}
+
+.txtCabecalho{
+color: rgb(255,255,255); 
+font: 19px CronosPro-Bold, Serif; 
+margin:0px; 
+padding:7px 0px 0px 27px; 
+float:left;
+}
+
+.ufsc{
+color: rgb(188,249,208); 
+font: 20px CronosPro-Bold, Serif;
+ margin:8px 26px; 
+ float:right;
+}  
+													
+.tituloTop{
+color: rgb(255,255,255); 
+font: 30px CronosPro-Bold, Serif; 
+line-height:100%; 
+margin-left:1%; 
+padding:20px 0px 0px 0px; 
+clear:both; 
+text-align: center; 
+width:400px;
+}
+
+
+
+div.middle{
+height:275px; 
+position:relative;
+}
+
+.silhoueta{
+position:absolute; 
+background: url(../img/icones/silhouetas.png); 
+height:71px; 
+width:200px; 
+top:87px; 
+left:415px;
+}
+
+.descricaoModulo{
+padding:22px 20px; 
+width:380px;
+}
+
+.descricaoModulo p{
+font-size:16px; 
+font-family:CronosPro-Regular, Serif; 
+color: rgb(113,119,104); 
+text-decoration:none;
+}
+
+.menuUnidade{
+position:absolute; 
+height:125px; 
+width:769px; 
+background: url(../img/icones/fundoMenu.jpg) repeat-x; 
+top:150px;
+}
+
+.colDescricao li{
+position:relative;
+display:inline-block; 
+height:125px; 
+width:221px;
+}
+
+.descricao a{
+display:table; 
+vertical-align: top; 
+height:100px;
+width:115px; 
+font: 12px CronosPro-Bold, Serif; 
+color: rgb(255, 255, 255); 
+margin:5px 0px 0px 95px; 
+padding-top:21px; 
+text-decoration:none
+}			
+
+.unidadeIcon{
+position: absolute; 
+height:86px; 
+width:62px; 
+background:url(../img/icones/icon.png) -119px -626px; 
+top:18px; 
+left:15px;
+}
+
+.unidadeIcon2{
+position: absolute; 
+height:86px; 
+width:62px; 
+background:url(../img/icones/icon.png) -119px -626px; 
+top:18px; 
+left:15px;
+}
+
+.unidadeIcon3{
+position: absolute; 
+height:86px; 
+width:62px; 
+background:url(../img/icones/icon.png) -119px -626px; 
+top:18px; 
+left:15px;
+}
+
+.unidadeCheck:after{
+content: ""; 
+display: block;
+height:90px; 
+width:75px; 
+background:url(../img/icones/icon.png) -13px -626px;
+}
+
+div.bottom{
+height: 113px; 
+position:relative;
+}
+
+.iconBottom{
+padding:14px 45px; 
+float:left;
+}
+
+.iconBottom li{
+display:inline-block;
+margin-left:9px; 
+z-index:9999;
+}
+
+.iconBottom li a{
+text-decoration:none;
+}
+
+.facebookIcon{
+height:60px; 
+width:75px; 
+background: url(../img/icones/icon.png) -4px -63px no-repeat;
+}
+
+.cafeIcon{
+height:60px; 
+width:75px; 
+background: url(../img/icones/icon.png) -4px -142px no-repeat;
+}
+
+.enqueteIcon{
+height:60px; 
+width:75px; 
+background: url(../img/icones/icon.png) -4px -222px no-repeat;
+}
+
+.complementarIcon{
+height:60px; 
+width:75px; 
+background: url(../img/icones/icon.png) -4px -302px  no-repeat;
+}
+
+.ferramentaIcon{
+height:60px; 
+width:75px; 
+background: url(../img/icones/icon.png) -4px -382px no-repeat;
+}
+
+.glossarioIcon{
+height:60px; 
+width:75px; 
+background: url(../img/icones/icon.png) -4px -462px no-repeat;
+}
+
+.forumIcon{
+height:60px; 
+width:75px; 
+background: url(../img/icones/icon.png) -4px -542px no-repeat;
+}	
+
+.forum{
+display:block; 
+height:67px; 
+width:77px; 
+float:right; 
+padding:29px 10px; 
+text-decoration:none;
+}					
+
+.fontIcon
+{font: 16px CronosPro-Regular, Serif; 
+color: rgb(113,119,104); 
+display:block; 
+padding-top:5px;
+}
+
+.facebookText{
+text-indent: 7px;
+}
+
+.cafeText{
+text-indent: 1px;
+}
+
+.enqueteText{
+text-indent: 13px;
+}
+
+.complementarText{
+text-indent: 8px;
+}
+
+.ferramentaText{
+text-indent: 3px;
+}
+
+.glossarioText{
+text-indent: 11px;
+}
+
+.forumText{
+text-indent: 19px; 
+color:rgb(230,230,230); 
+text-decoration:none;
+}
+
+

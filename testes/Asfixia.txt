@@ -1,0 +1,180 @@
+<p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/responsiveSlider.js" type="text/javascript"></script>
+<script type="text/javascript">// <![CDATA[
+var $_ = $.noConflict(true);
+// ]]></script>
+<script type="text/javascript">// <![CDATA[
+$_(document).ready(function(){
+
+	$_(".texto").hide();	
+	$_(".detalhesBt").click(function (e) {
+		console.log(e)
+		var ct = e.currentTarget,
+			id = $_(ct).attr('id'),
+			idNum = id.substr(id.indexOf('dtBt')+4);
+		console.log(ct, id, idNum);
+
+		if ($_("#texto"+idNum).is(":hidden")){
+			$_(".detalhesBt").text("Menos detalhes");
+			$_("#texto"+idNum).slideDown("slow");
+			$_(this).addClass("menos");
+			console.log('Var');
+		} else {
+			$_("#texto"+idNum).slideUp("slow");
+			$_(".detalhesBt").text("Mais detalhes");
+			$_(this).removeClass("menos");
+		}
+	});
+
+
+    $_('.apresentacaoModulo').on({
+		mouseenter: function(e){			
+			$_(this).css('background', "url(//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png) -79px -220px");
+		},
+		mouseleave: function(e){
+			$_(this).css('background-position', "-11px -220px");
+		}
+	});
+	
+	$_('.preTeste').on({
+		mouseenter: function(e){
+			$_(this).css('background', "url(//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png) -78px -15px");
+		},
+		mouseleave: function(e){
+			$_(this).css('background-position', "-13px -15px");
+		}
+	});
+
+	$_('.conteudoOnline').on({
+		mouseenter: function(e){
+			$_(this).css('background', "url(//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png) -80px -376px");
+		},
+		mouseleave: function(e){
+			$_(this).css('background-position', "-11px -376px");
+		}
+	});
+
+
+	$_('.casosClinicos').on({
+		mouseenter: function(e){
+			$_(this).css('background', "url(//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png) -76px -145px");
+		},
+		mouseleave: function(e){
+			$_(this).css('background-position', "-11px -145px");
+		}
+	});
+
+	$_('.tomadaDecisao').on({
+		mouseenter: function(e){
+			$_(this).css('background', "url(//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png) -76px -80px");
+		},
+		mouseleave: function(e){
+			$_(this).css('background-position', "-10px -80px");
+		}
+	});
+
+	$_('.posTeste').on({
+		mouseenter: function(e){
+			$_(this).css('background', "url(//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png) -77px -15px");
+		},
+		mouseleave: function(e){
+			$_(this).css('background-position', "-12px -15px");
+		}
+	});
+
+
+	$_('.livroDoCurso').on({
+		mouseenter: function(e){
+			$_(this).css('background', "url(//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png) -91px -286px");
+		},
+		mouseleave: function(e){
+			$_(this).css('background-position', "-23px -286px");
+		}
+	});
+
+	
+	$_('.materiaisComplementares').on({
+		mouseenter: function(e){
+			$_(this).css('background', "url(//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png) -90px -337px");
+		},
+		mouseleave: function(e){
+			$_(this).css('background-position', "-23px -337px");
+		}
+	});
+	$_(".rslides").responsiveSlides({
+		auto: true,
+timeout: 10000,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 650,
+        namespace: "centered-btns",
+        after: function(){
+        	$_('.texto').each(function(index, dom){
+        		if (!$_("#texto"+(index+1)).is(":hidden") ){
+        			$_("#texto"+(index+1)).slideUp("slow");
+        			$_(".detalhesBt").text("Mais detalhes");
+                                $_(".detalhesBt").removeClass("menos");
+        		}
+        	});
+        }
+	});
+
+	var style_rules = 'body{font-family: Arial, Helvetica, sans-serif; } .rslides {position: relative; list-style: none !important; overflow: hidden; width: 100%; padding: 0; margin: 0 !important; } .rslides li {-webkit-backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0; } .rslides li:first-child {position: relative; display: block; float: left; } .rslides img {display: block; height: auto; float: left; width: 100%; border: 0; } #wrapperBanner{position: relative; display: inline-block; } #bannerMob{margin: 0; padding: 0; } .centered-btns_nav {z-index: 3; position: absolute; -webkit-tap-highlight-color: rgba(0,0,0,0); top: 58%; left: 0; opacity: 0.7; text-indent: -9999px; overflow: hidden; text-decoration: none; height: 61px; width: 38px; background: transparent url("//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/themes.gif") no-repeat left top; margin-top: -45px; } .centered-btns_nav:active {opacity: 1.0; } .centered-btns_nav.next {left: auto; background-position: right top; right: 0; } .centered-btns_nav:focus{outline: none; } .centered-btns_tabs{padding: 5px; margin-top: 10px; text-align: center; } .centered-btns_tabs li{display: inline; float: none; _float: left; *float: left; margin-right: 5px; } .centered-btns_tabs a{text-indent: -9999px; overflow: hidden; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; background: #ccc; background: rgba(0,0,0, .2); display: inline-block; _display: block; *display: block; -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3); -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3); box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3); width: 9px; height: 9px; } .centered-btns_here a{background: #222; background: rgba(0,0,0, .8); } .detalhesBt {background-color: #67B06D; color: #FFFFFF !important; display: block; font-size: 0.8em; font-weight: bold; height: 19px; left: 506px; padding: 6px 10px 1px 35px; position: absolute; text-decoration: none; top: 151px; width: 89px; } .detalhesBt:before{background: url("//unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png") no-repeat scroll -160px -31px transparent; content: ""; display: block; height: 9px; left: 8px; position: absolute; top: 9px; width: 10px; } .detalhesBt.menos:before{background-position: -160px -40px; top: 7px; left: 8px; }';
+
+
+
+var style = '<style type="text/css">' + style_rules + "</style>";
+$_("head").append(style);
+
+});
+// ]]></script>
+</p>
+<div class="wrapper" style="margin: 0 auto; width: 640px; height: 820px;">
+<div class="top" style="background: #dfdfdf; height: 91px; position: relative;">
+<div class="cabecalho" style="background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/cabecalho.png') no-repeat 0px 0px; height: 91px;">
+<p class="titulo" style="color: white; font-size: 24px; font-family: arial; padding: 5px 10px;">Módulo Asfixia</p>
+<p class="unasus_ufsc" style="color: white; font-size: 16px; font-family: arial; margin: -52px 10px; text-align: right;">UNA-SUS | UFSC</p>
+</div>
+<p style="font-size: 12px; position: absolute; top: 48px; left: 20px; font-family: arial;" class="descricao">Nesta unidade, aborda a asfixia, um problema tão raro quanto grave na Atenção Básica: Da revisão conceitual até a importância do tema para as equipes das Unidades Básicas de Saúde.</p>
+</div>
+<div class="middle" style="background: #fdf9ea; height: 233px; position: relative;">
+<div id="wrapperBanner" style="position: absolute; top: 20px; height: 175px; -moz-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.50); -webkit-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.50); box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.50);">
+<ul class="rslides">
+<li><img src="https://unasus2.moodle.ufsc.br/pluginfile.php/16558/mod_folder/content/0/padraoBanner.jpg" alt="" /> <a id="dtBt1" class="detalhesBt" href="# return false;">Mais detalhes</a></li>
+<li><img src="https://unasus2.moodle.ufsc.br/pluginfile.php/16558/mod_folder/content/0/padraoBanner.jpg" alt="" /> <a id="dtBt2" class="detalhesBt" href="# return false;">Mais detalhes</a></li>
+<li><img src="https://unasus2.moodle.ufsc.br/pluginfile.php/16558/mod_folder/content/0/padraoBanner.jpg" alt="" /> <a id="dtBt3" class="detalhesBt" href="# return false;">Mais detalhes</a></li>
+</ul>
+</div>
+</div>
+<div class="texto" id="texto1" style="background: #fdf9ea; width: 640px; text-align: left; padding-bottom: 26px; color: #4d4d4d; line-height: 18px;">
+<p>As populações do Norte, Nordeste e Centro-Oeste são mais suscetíveis à cefaleia crônica do que as do Sul e Sudeste. Já os moradores dessas duas regiões são mais propensos a enxaquecas. A constatação foi feita pelo neurologista Luiz Paulo de Queiroz, da Universidade Federal de Santa Catarina e integrante da Sociedade Brasileira de Cefaleia, por meio de pesquisa na qual entrevistou 3.848 pessoas de todas as regiões do país. Para Queiroz, essas diferenças podem estar associadas ao fato de que nas regiões Sul e Sudeste é maior a presença de descendentes de europeus, mais suscetíveis à enxaqueca. Isso também pode ser reflexo de um estilo de vida mais competitivo e sujeito a situações estressantes. Segundo ele, a enxaqueca é caracterizada por dor latente de um lado só da face, acompanhada de intolerância à luz. Ela é mais comum entre os europeus e habitantes dos Estados Unidos. Já a cefaleia crônica produz uma sensação de dor em toda a cabeça e incapacita a pessoa para o trabalho e outras atividades por dias seguidos.</p>
+<p>Fonte: http://www.brasil.gov.br/noticias/arquivos/2011/09/14/norte-nordeste-e-centro-oeste-registram-maioria-dos-casos-de-cefaleia-cronica-no-pais-segundo-pesquisa</p>
+</div>
+<div class="texto" id="texto2" style="background: #fdf9ea; width: 640px; text-align: left; padding-bottom: 26px; color: #4d4d4d; line-height: 18px;">
+<p>As cefaleias constituem um problema de saúde pública que afeta a qualidade de vida de pacientes que procuram novos medicamentos, praticando a automedicação, prática que representa grande risco à saúde, pelas reações de hipersensibilidade, dependência física e psíquica, além de mascarar sintomas e agravar a doença de base. Neste estudo, a automedicação foi identificada em 53,1% dos entrevistados. Os anti-inflamatórios não esteroides (AINES) foram os medicamentos mais utilizados (25,8%). A cefaleia foi o principal sintoma motivador para utilização de medicamentos, sendo os AINES a classe terapêutica mais consumida. A automedicação é praticada por indicação própria, sugestão de amigos, balconistas ou reutilizando receitas médicas antigas.</p>
+<p>Fonte: http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1806-00132011000200004&amp;lng=pt&amp;nrm=iso</p>
+</div>
+<div class="texto" id="texto3" style="background: #fdf9ea; width: 640px; text-align: left; padding-bottom: 26px; color: #4d4d4d; line-height: 18px;">
+<p>Caracterização das cefaleias na síndrome da tensão pré-menstrual (TPM). Embora cefaleia seja um dos sintomas associados à TPM, não são fornecidos detalhes sobre esta dor pelos critérios do American College of Obstetrics and Gynecology (ACOG). Um grupo de 45 mulheres em idade fértil apresentando TPM foi convidado a preencher um diário de registro de cefaleia e dos sintomas de TPM por três meses consecutivos. O diário incluía detalhes de cada crise de cefaleia, permitindo classificação de acordo com os critérios da International Headache Society (IHS-2004). Enxaqueca sem aura foi a forma mais frequente de cefaleia na TPM (60%), seguida de cefaleia tipo tensional (30%). Concluiu-se que melhor manejo clínico e terapêutico pode ser obtido na cefaleia da TPM se o tipo de cefaleia apresentado pela paciente puder ser adequadamente caracterizado.</p>
+<p>Fonte: http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0004-282X2009000100010</p>
+</div>
+<div class="bot" style="height: 193px; position: relative;">
+<div class="iconsList" style="background: #104974; height: 98px; position: relative; box-shadow: 0 0 5px #353535 inset;">
+<div class="seta_img" style="background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/setaVerde.png') no-repeat 0px 0px; height: 98px; width: 102px; position: absolute;">
+<p style="font-size: 16px; font-family: arial; color: white; padding: 28px 15px;">Início dos estudos</p>
+</div>
+<div class="apresentacaoModulo" style="position: absolute; top: 6px; left: 128px; width: 75px; height: 85px; background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png') -11px -220px; z-index: 9999;"><a id="apresentacaoModuloBt" style="display: block; height: 31px; font-size: 12px; color: white; text-align: center; font-family: arial; text-decoration: none; padding-top: 56px;" href="https://unasus2.moodle.ufsc.br/pluginfile.php/16381/mod_resource/content/2/Apresenta_Asfixia.pdf" target="_blank">Apresentação <br /> do Módulo </a></div>
+<div class="preTeste" style="position: absolute; top: 6px; left: 216px; width: 75px; height: 74px; background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png') -13px -15px; z-index: 9999;"><a id="preTesteBt" style="display: block; height: 32px; font-size: 12px; color: white; text-align: center; font-family: arial; text-decoration: none; padding-top: 56px;" href="https://unasus2.moodle.ufsc.br/mod/quiz/view.php?id=2788" target="_blank">Pré Teste</a></div>
+<div class="conteudoOnline" style="position: absolute; top: 6px; left: 298px; width: 75px; height: 74px; background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png') -11px -376px; z-index: 9999;"><a id="conteudoOnlineBt" style="display: block; height: 32px; font-size: 12px; color: white; text-align: center; font-family: arial; text-decoration: none; padding-top: 56px;" href="https://unasus2.moodle.ufsc.br/pluginfile.php/16251/mod_resource/content/1/html/top1_1.html" target="_blank">Conteúdo<br />Online</a></div>
+<div class="casosClinicos" style="position: absolute; top: 6px; left: 378px; width: 75px; height: 74px; background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png') -11px -145px; z-index: 9999;"><a id="casosClinicosBt" style="display: block; height: 32px; font-size: 12px; color: white; text-align: center; font-family: arial; text-decoration: none; padding-top: 56px;" href="https://unasus2.moodle.ufsc.br/mod/scorm/view.php?id=2825" target="_blank">Casos<br />Clínicos</a></div>
+<div class="tomadaDecisao" style="position: absolute; top: 6px; left: 464px; width: 75px; height: 74px; background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png') -10px -80px; z-index: 9999;"><a id="tomadaDecisaoBt" style="display: block; height: 32px; font-size: 12px; color: white; text-align: center; font-family: arial; text-decoration: none; padding-top: 56px;" href="https://unasus2.moodle.ufsc.br/mod/scorm/view.php?id=2826" target="_blank">Tomadas <br /> de decisões</a></div>
+<div class="posTeste" style="position: absolute; top: 6px; left: 550px; width: 75px; height: 74px; background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png') -12px -15px; z-index: 9999;"><a id="posTesteBt" style="display: block; height: 32px; font-size: 12px; color: white; text-align: center; font-family: arial; text-decoration: none; padding-top: 56px;" href="https://unasus2.moodle.ufsc.br/mod/quiz/view.php?id=2798" target="_blank">Pós Teste</a></div>
+</div>
+<div class="iconsFinals" style="height: 100px; width: 640px; position: relative;">
+<div class="livroDoCurso" style="position: absolute; top: 8px; left: 99px; width: 50px; height: 65px; background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png') -23px -286px; z-index: 9999;"><a id="livroDoCursoBt" style="display: block; height: 19px; width: 185px; font-size: 14px; text-align: center; font-family: arial; text-decoration: none; color: #4d4d4d; padding: 28px 10px;" href="https://unasus2.moodle.ufsc.br/pluginfile.php/16529/mod_resource/content/2/Asfixia.pdf" target="_blank">Livro do Curso</a></div>
+<div class="materiaisComplementares" style="position: absolute; top: 18px; left: 337px; width: 50px; height: 50px; background: url('https://unasus2.moodle.ufsc.br/pluginfile.php/14968/mod_folder/content/0/icons.png') -23px -337px; z-index: 9999;"><a id="materiaisComplementaresBt" style="display: block; height: 24px; width: 210px; font-size: 14px; text-align: center; font-family: arial; text-decoration: none; color: #4d4d4d; padding: 18px 32px;" href="https://unasus2.moodle.ufsc.br/mod/page/view.php?id=2828" target="_blank">Leituras Complementares</a></div>
+</div>
+</div>
+</div>

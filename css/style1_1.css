@@ -1,0 +1,346 @@
+﻿body{}
+
+@font-face {font-family: "CronosPro-Regular"; src: url("http://site/fontes/RegencyScriptFLF-Regular.eot"); /* para IE */ src: local("CronosPro-Regular"), url("https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/CronosPro-Regular.otf"); } @font-face {font-family: "CronosPro-Bold"; src: url("http://site/fontes/RegencyScriptFLF-Regular.eot"); /* para IE */ src: local("CronosPro-Bold"), url("https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/CronosPro-Bold.otf"); }
+div.wrapper{
+margin: 0 auto;
+height:576px; 
+width:769px; 
+background-color: rgb(227,230,236); 
+position:relative;
+}
+
+.campoVideo{
+position:absolute; 
+top:45px; 
+left:410px; 
+height:198px; 
+width:333px; 
+z-index:9999; 
+border: solid rgb(255,255,255)
+}
+
+.topoLateral{
+position:absolute; 
+height:576px; 
+width:769px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16706/mod_folder/content/0/topo_lateral.png) no-repeat;
+}
+
+.estudoFaixa{
+position:absolute; 
+top:318px; 
+height:36px; 
+width:243px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16706/mod_folder/content/0/estudoFaixa.png) no-repeat; 
+z-index:9999;
+}
+
+
+div.top	{
+position:relative; 
+height:190px;
+}
+
+.txtCabecalho{
+color: rgb(255,255,255); 
+font: 19px CronosPro-Bold, Serif; 
+margin:0px; 
+padding:7px 0px 0px 27px; 
+float:left;
+}
+
+.ufsc{
+color: rgb(188,249,208); 
+font: 20px CronosPro-Bold, Serif;
+ margin:8px 26px; 
+ float:right;
+}  
+													
+.tituloTop{
+color: rgb(255,255,255); 
+font: 30px CronosPro-Bold, Serif; 
+line-height:100%; 
+margin-left:1%; 
+padding:20px 0px 0px 0px; 
+clear:both; 
+text-align: center; 
+width:400px;
+}
+
+div.middle{
+height:275px; 
+position:relative;
+}
+
+.silhoueta{
+position:absolute; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16706/mod_folder/content/0/silhouetas.png); 
+height:71px; 
+width:200px; 
+top:87px; 
+left:415px;
+}
+
+.descricaoModulo{
+padding:25px 20px; 
+width:380px;
+}
+
+.descricaoModulo p{
+font-size:16px; 
+font-family:CronosPro-Regular, Serif; 
+color: rgb(113,119,104); 
+text-decoration:none;
+}
+
+.menuUnidade{
+position:absolute; 
+height:125px; 
+width:769px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16706/mod_folder/content/0/fundoMenu.jpg) repeat-x; 
+top:150px;
+}
+
+.divisoria1{
+position:absolute; 
+top:8px; 
+left:220px;
+margin:0px !important;
+background: url(//unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/divisoria.png) no-repeat;
+opacity: 0.8; 
+height:111px;
+width:7px;
+z-index:4444;
+}
+
+.divisoria2{
+position:absolute; 
+top:8px; 
+left:446px;
+margin:0px !important;
+background: url(//unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/divisoria.png) no-repeat;
+opacity: 0.8; 
+height:111px;
+width:7px;
+z-index:4444;
+}
+
+.divisoria3{
+position:absolute; 
+top:8px; 
+left:670px;
+margin:0px !important;
+background: url(//unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/divisoria.png) no-repeat;
+opacity: 0.8; 
+height:111px;
+width:7px;
+z-index:4444;
+}
+
+.unidadeReflexo{
+position:absolute;
+background: url(../img/icones/reflexoUnidade.png) no-repeat;
+height:10px;
+z-index:8888;
+top:116px;
+left:10px;
+width:769px;
+}
+
+.colDescricao{
+margin-left:0px!important ; 
+}
+
+.colDescricao li{
+position:relative;
+display:inline-block; 
+height:125px; 
+width:221px;
+}
+
+.colDescricao li span{
+position:absolute;
+top:20px;
+left:92px;
+width:120px;
+}
+
+.colDescricao li h1{
+position:absolute;
+top:22px;
+left:36px;
+z-index:9999;
+font-size:23px;
+opacity:0.5;
+}
+
+.descricao{
+position:relative;
+display:table; 
+vertical-align: top; 
+height:125px;
+width:220px; 
+font: 12px CronosPro-Bold, Serif; 
+color: rgb(255, 255, 255); 
+text-decoration:none;
+cursor:pointer;
+letter-spacing: 1px;
+}			
+
+.unidadeIcon{
+position: absolute; 
+height:86px; 
+width:62px; 
+background:url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -119px -626px; 
+top:18px; 
+left:15px;
+}
+
+.unidadeIcon2{
+position: absolute; 
+height:86px; 
+width:62px; 
+background:url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -119px -626px; 
+top:18px; 
+left:15px;
+}
+
+.unidadeIcon3{
+position: absolute; 
+height:86px; 
+width:62px; 
+background:url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -119px -626px; 
+top:18px; 
+left:15px;
+}
+
+.unidadeCheck:after{
+content: ""; 
+display: block;
+height:90px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -14px -626px;
+}
+
+.unidadeIncompleteCheck:after{
+content: ""; 
+display: block;
+height:90px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -13px -741px;
+}
+
+div.bottom{
+height: 113px; 
+position:relative;
+}
+
+.iconBottom{
+padding:14px 40px; 
+float:left;
+margin:0px !important;
+}
+
+.iconBottom li{
+display:inline-block;
+margin-left:9px; 
+z-index:9999;
+}
+
+.iconBottom li a{
+text-decoration:none;
+}
+
+.facebookIcon{
+height:60px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -4px -63px no-repeat;
+}
+
+.cafeIcon{
+height:60px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -4px -142px no-repeat;
+}
+
+.opiniaoIcon{
+height:60px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -4px -222px no-repeat;
+}
+
+.extraIcon{
+height:60px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -4px -302px  no-repeat;
+}
+
+.utilitarioIcon{
+height:60px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -4px -382px no-repeat;
+}
+
+.glossarioIcon{
+height:60px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -4px -462px no-repeat;
+}
+
+.forumIcon{
+height:60px; 
+width:75px; 
+background: url(https://unasus2.moodle.ufsc.br/pluginfile.php/16805/mod_folder/content/0/icon.png) -4px -542px no-repeat;
+}	
+
+.forum{
+display:block; 
+cursor:pointer;
+height:67px; 
+width:77px; 
+float:right; 
+padding:29px 10px; 
+text-decoration:none;
+}					
+
+.fontIcon
+{font: 16px CronosPro-Regular, Serif; 
+color: rgb(113,119,104); 
+display:block; 
+padding-top:5px;
+}
+
+.cafeText{
+text-indent: -1px;
+}
+
+.opiniaoText{
+text-indent: 1px;
+}
+
+.utilitarioText{
+text-indent: 7px;
+}
+
+.extraText{
+text-indent: 20px;
+}
+
+.glossarioText{
+text-indent: 11px;
+}
+
+.facebookText{
+text-indent: 21px;
+}
+
+.forumText{
+text-indent: 19px; 
+color:rgb(230,230,230); 
+text-decoration:none;
+}
+
+.pointer{
+cursor:pointer;
+}
+
