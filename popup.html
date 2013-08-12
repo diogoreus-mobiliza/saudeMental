@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script language="JavaScript">
+			function abrir3(URL) {
+			  window.open(URL,'page','toolbar=no, location=yes, status=no, menubar=no, scrollbars=yes, resizable=yes, width=850, height=600');
+			}
+		</script>
+		<script>
+			function abrir(pagina, altura) {
+				altura = 600;
+				largura = 850;
+				var esquerda = (screen.width - largura)/2;
+				var topo = (screen.height - altura)/2 - 40;
+				win = window.open(
+					pagina,'', 
+					'height=' + altura + 
+					', width=' + largura + 
+					', top=' + topo + 
+					', left=' + esquerda + 
+					', toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=no'); 
+			}
+		</script>
+		 
+		<a href="javascript:abrir('ponto_ancoragem_v2.html');">Clique Aqui</a>
+	</body>
+</html>

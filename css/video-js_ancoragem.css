@@ -498,7 +498,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
     cursor: pointer;
     display: block;
     height: 5em;
-    left: 16em;
+    left: 17em;
     margin: 0;
     opacity: 1;
     position: absolute;
@@ -506,7 +506,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
     transition: border 0.1s ease 0s, box-shadow 0.1s ease 0s, transform 0.1s ease 0s;
     width: 5em;
     z-index: 2;
-    top: 7em;
+    top: 8em;
 }
 
 .vjs-default-skin:hover .vjs-big-play-button,
@@ -534,7 +534,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
     font-size: 3em;
     height: 100%;
     left: 3px;
-    line-height: 1.7;
+    line-height: 1.68;
     position: absolute;
     text-align: center;
     text-shadow: 0.05em 0.05em 0.1em #000000;

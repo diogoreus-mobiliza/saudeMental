@@ -9,7 +9,7 @@
   src: local("CronosPro-Bold"), url("http://localhost/projetos/TimelineJS/css/font/");
 }
 
-body{ font-family: CronosPro-Regular; margin: 0px; background: #fff; }
+body{ font-family: CronosPro-Regular, Serif; margin: 0px; background: url("../img/icones/background_ancoragem.png") #5B5B5B; }
 
 /* 
 HELP 
@@ -33,23 +33,24 @@ FIM HELP
 #topo {
 	margin: 0px; height: 140px; width: 100%; position: relative; z-index: 5;
 }
-#topo div {
+#cabecalhoTopo {
     background: url("../img/icones/cabecalho_ancoragem.png") no-repeat scroll 0 0 transparent;
-    height: 110px;
-    margin: 0 0 0 -6px;
-    padding: 30px;
+    height: 155px; left: -79px; margin: 0 0 0 -6px; position: absolute; width: 808px; z-index: 0;
 }
-#topo h1 {
-	padding: 0px; margin: 0px 0px 0px 10px; color: white; font-weight: bolder; font-size: 30px;
+#tituloTopo {
+	width: 620px;
 }
-#topo h3 {
-	padding: 0px; color: #cbf6f3; margin: 5px 0px 0px 15px; font-size: 20px;
+#tituloTopo h1 {
+	padding: 15px 0px 0px 25px; margin: 0px 0px 0px 10px; color: white; font-weight: bolder; font-size: 26px; position: relative;
+}
+#tituloTopo h3 {
+	padding: 2px 0px 0px 25px;  color: #cbf6f3; margin: 5px 0px 0px 15px; font-size: 18px; position: relative;
 }
 #corpo {
 	/*width: 620px;*/ min-height: 400px; padding: 0;
 }
 .texto {
-	width: 600px; min-height: 10px; padding: 20px;
+	width: 600px; min-height: 10px; padding: 20px; text-align: justify;
 }
 .img {
 	padding: 10px;
@@ -59,7 +60,7 @@ FIM HELP
 	BANNER 
 */
 #banner {
-	width: 750px; margin: 0px 0px 0px -55px; position: relative; height: 180px;
+	width: 750px; margin: -15px 0px -30px -55px; position: relative; height: 180px; box-shadow: 0px 0px 7px #B2B0B0;
 }
 .banner {
 	height: 180px;  text-align: left;
@@ -68,13 +69,13 @@ FIM HELP
 	width: 220px; height: 45px;
 }
 .banner .titulo h1 {
-	margin: 0px 10px 0px  15px; padding: 0px 0px 0px  0px; font-size: 40px; color: #ff6c00;
+	margin: 10px 10px 0px  15px; padding: 0px 0px 0px  0px; font-size: 40px; color: #ff6c00;
 }
 .banner .conteudo {
-	font-size: 16px; color: #ffa200; margin: 0px 10px 0px 15px; padding: 0px 0px 0px 0px; font-weight: bold; height: 100px;
+	font-size: 16px; color: #ffa200; margin: 0px 10px 0px 15px; padding: 0px 0px 0px 0px; font-weight: bold; height: 90px;
 }
 .banner .conteudo span {
-	height: 90px;
+	height: 85px;
 }
 .saberMais {
 	width: 140px; height: 35px; background: #0e7bc0; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px; cursor: pointer;
@@ -94,13 +95,13 @@ FIM HELP
 	CAIXA TEXTO BANNER 
 */	 
 .caixaTextoBanner {
-	width: 620px; background: #0e7bc0; padding: 10px; display: none;   /* margin: -20px 0 0 -20px; */
+	width: 620px; background: #0e7bc0; padding: 10px; display: none; /*margin: -20px 0 0 -20px; */
 }
 .caixaTextoBanner h2 {
-	padding: 0px 0px 10px 0px; margin: 0px; color: #fff; height: 30px; width: 100%;
+	padding: 0px 0px 10px 0px; margin: 0px; color: #fff; height: 20px; width: 100%; font-size: 26px;
 }
 .caixaTextoBanner span {
-	padding: 0px; margin: 0px; font-size: 12px; color: #fff;
+	padding: 0px; margin: 0px; font-size: 12px; color: #fff; font-size: 14px;
 }
 
 .rslides {
@@ -119,7 +120,7 @@ FIM HELP
 	VIDEO 
 */
 .corpoAtividadeDeAprendizagemTipoVIDEO {
-	width: 100%; height:185px; margin-top: 46px;
+	width: 100%; height:190px; margin-top: 50px;
 }
 
 /* @ CAIXA ATIVIDADE DE APRENDIZADO VIDEO 1  @ */
@@ -127,7 +128,7 @@ FIM HELP
 	position: relative; background: #fdf9ea; width: 750px; height:110px; left: -55px;
 }
 .barraAtividadeDeAprendizagemVIDEO1 {
-	width: 380px; height:39px; margin: -22px; position: relative;  background: url('../img/icones/barraTopoAtividadeDeAprendizagemDireita.png') no-repeat;
+	width: 380px; height:39px; margin: -22px; position: relative; background: url('../img/icones/barraTopoAtividadeDeAprendizagemDireita.png') no-repeat;
 }
 .barraAtividadeDeAprendizagemVIDEO1 div {
 	padding: 5px 0px 0px 0px; width: 370px; text-align: center;
@@ -136,13 +137,13 @@ FIM HELP
 	color: #fff; font-size: 16px; font-weight: bolder;
 }
 .videoAtividadeDeAprendizagemVIDEO1 {
-	position: relative; width: 390px; height:220px; top: -140px; padding: 5px; background: #FFF;
+	position: absolute; width: 390px; height:220px; top: -40px; right: -1; padding: 5px; background: #FFF;
 }
-.iconeAtividadeDeAprendizagemVIDEO1 {
+/*.iconeAtividadeDeAprendizagemVIDEO1 {
 	background: url('../img/icones/compAtividadeDeAprendizagem.png'); width: 39px; height: 39px; margin: 25px 0px 0px 15px;
-}
+}*/
 .textoAtividadeDeAprendizagemVIDEO1 {
-	padding: 15px 10px 0px 10px; width: 285px; height: 70px;
+	padding: 20px 10px 0px 10px; width: 331px; height: 70px;
 }
 .textoTituloAtividadeDeAprendizagemVIDEO1 {
 	font-weight: bolder;
@@ -165,54 +166,67 @@ FIM HELP
 .videoAtividadeDeAprendizagemVIDEO2 {
 	position: absolute; width: 390px; height:220px; top: -45; left: -2px; padding: 5px; background: #FFF;
 }
-.iconeAtividadeDeAprendizagemVIDEO2 {
+/*.iconeAtividadeDeAprendizagemVIDEO2 {
 	background: url('../img/icones/compAtividadeDeAprendizagem.png'); width: 39px; height: 39px; margin: 38px 8px 0 0px;
-}
+}*/
 .textoAtividadeDeAprendizagemVIDEO2 {
-	padding: 31px 7px 0 0; width: 285px; height: 70px;
+	padding: 33px 7px 0 0; width: 340px; height: 70px;
 }
 .textoTituloAtividadeDeAprendizagemVIDEO2 {
 	font-weight: bolder;
 }
 /**/
 
-.corpoAtividadeDeAprendizagemTipoPDF {
-	width: 425px; margin: 0px auto;
+.corpoAtividadeDeAprendizagemTipoCaixa {
+	width: 425px; margin: 0px auto; height: 168px;
 }
-.atividadeDeAprendizagemPDF {
+.atividadeDeAprendizagemCaixa {
 	width: 422px; height: 135px; background: #FDF9EA; margin: 0px auto;
 }
-.topoAtividadeDeAprendizagemPDF {
+.topoAtividadeDeAprendizagemCaixa {
 	color: #fff; margin-left: -24px; margin-top: -1px; padding: 5px 0px 0px 0px;  background: url('../img/icones/barraCompletaAtividadeDeAprendizagem.png') no-repeat; width: 472px; height: 37px; text-align: center;
 }
-/*.atividadeDeAprendizagemPDF div span {
-	color: #fff; font-size: 16px; font-weight: bolder;
-}*/
 .iconeAtividadeDeAprendizagemPDF {
-	margin-left: 30px; background: url('../img/icones/iconePDF2.png') no-repeat; width: 110px; height: 110px;
+	margin-left: 30px; background: url('../img/icones/iconAtividade.png') -391px -48px no-repeat; width: 110px; height: 110px;
 }
-.textoAtividadeDeAprendizagemPDF {
+.iconeAtividadeDeAprendizagemPowerPoint {
+	margin-left: 30px; background: url('../img/icones/iconAtividade.png') -273px -48px no-repeat; width: 110px; height: 110px;
+}
+.iconeAtividadeDeAprendizagemJogos {
+	margin-left: 30px; background: url('../img/icones/iconAtividade.png') -152px -48px no-repeat; width: 110px; height: 110px;
+}
+.iconeAtividadeDeAprendizagemEstatisticas {
+	margin-left: 30px; background: url('../img/icones/iconAtividade.png') -509px -48px no-repeat; width: 110px; height: 110px;
+}
+.iconeAtividadeDeAprendizagemInfografico {
+	margin-left: 30px; background: url('../img/icones/iconAtividade.png') -627px -48px no-repeat; width: 110px; height: 110px;
+}
+.iconeAtividadeDeAprendizagemTimeline {
+	margin-left: 30px; background: url('../img/icones/iconAtividade.png') -746px -48px no-repeat; width: 110px; height: 110px;
+}
+
+.textoAtividadeDeAprendizagemCaixa {
 	width: 260px; height: 70px; margin-left: 10px; 
 }
-.textoAtividadeDeAprendizagemPDF span {
+.textoAtividadeDeAprendizagemPDFCaixa span {
 	color: black;	
 }
-.linkAtividadeDeAprendizagemPDF {
+.linkAtividadeDeAprendizagemCaixa {
 	width: 260px; text-align: center;
 }
 
 /* Atividade Realizada*/
 .atividadeRealizadaVIDEO 			{ width: 355px; height:30px; background: url('../img/icones/barraAtividadeRealizada.png') #0EC012; }
 .atividadeRealizadaVIDEO div 		{ width: 170px; height:30px; margin: 0 auto; }
-.atividadeRealizadaVIDEO div div 	{ margin: 4px 0px 0px 0px; background: url('../img/icones/icon3.png') -36px -7px; width: 20px; height:20px; }
+.atividadeRealizadaVIDEO div div 	{ width: 20px; height:20px; margin: 4px 0px 0px 0px; background: url('../img/icones/icon3.png') -36px -7px; }
 .atividadeRealizadaVIDEO div span 	{ padding: 5px; color: #FFF; }
 
-.atividadeRealizadaPDF 				{ width: 423px; height:30px; margin-left: 1px; background: url('../img/icones/barraAtividadeRealizada.png') #0EC012; }
+.atividadeRealizadaPDF 				{ width: 424px; height:30px; margin-left: 1px; background: url('../img/icones/barraAtividadeRealizada.png') #0EC012; }
 .atividadeRealizadaPDF div 			{ width: 280px; height:30px; margin: 0 auto; }
-.atividadeRealizadaPDF div div 		{ margin: 3px 0px 0px 40px; background: url('../img/icones/icon3.png') -36px -7px; width: 20px; height:20px; }
+.atividadeRealizadaPDF div div 		{ width: 20px; height:20px; margin: 3px 0px 0px 40px; background: url('../img/icones/icon3.png') -36px -7px; }
 .atividadeRealizadaPDF div span 	{ padding: 5px; color: #FFF; }
 
-.bordarAtividadeRealizada 			{ border: 1px solid #0EC012; }
+.bordarAtividadeRealizada 			{ border-left: 1px solid #0EC012; border-right: 1px solid #0EC012; }
 /**/
 
 /* Atividade Pendente */
@@ -221,14 +235,19 @@ FIM HELP
 .atividadePendenteVIDEO div div  	{ margin: 4px 0px 0px 0px; background: url('../img/icones/icon3.png') -10px -8px; width: 20px; height:20px; }
 .atividadePendenteVIDEO div span 	{ padding: 5px; color: #ed2024; }
 
-.atividadePendentePDF 				{ width: 423px; height:30px; background: #ffcd35; }
+.atividadePendentePDF 				{ width: 423px; height:30px; background: #ffcd35; margin-left: 1px; }
 .atividadePendentePDF div 			{ width: 280px; height:30px; margin: 0 auto; }
-.atividadePendentePDF div div 		{ margin: 3px 0px 0px 40px; background: url('../img/icones/icon3.png') -10px -8px; width: 20px; height:20px; }
-.atividadePendentePDF div span 		{ padding: 5px; color: #ed2024; }
+.atividadePendentePDF div div 		{ margin: 6px 0px 0px 40px; background: url('../img/icones/icon3.png') -10px -8px; width: 20px; height:20px; }
+.atividadePendentePDF div span 		{ padding: 7px; color: #ed2024; }
 
-.bordarAtividadePendente 		 	{ border: 1px solid #ffcd35; }
+.bordarAtividadePendente 		 	{ border-left: 1px solid #ffcd35; border-right: 1px solid #ffcd35;  }
 /**/
 
 .rodape {
 	width:100%; font-size: 14px; height: 35px; background: #ff0000; text-align: center; color: #FFF;
+}
+
+.bolinhass {
+	position: relative;
+	top: 5px;
 }
